@@ -2,14 +2,23 @@ html{
     overflow-x: hidden;
 }
 
+body{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 .header{
+    background-image: url("../img/apple-cellphone-colors.jpg");
+    background-position: fixed;
+    background-size: contain;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    height: 80vh;
+    align-items: center;
+    height: 90vh;
 }
 /************Navigation styles*/
 nav{
+    align-self: flex-end;
     width: 100%;
 }
 
@@ -24,14 +33,17 @@ li {
 }
 
 li a{
+    color: #f1f1f1;
+    text-decoration: none;
     font-size: 1.5rem;
 }
 
-a{
-    text-decoration: none;
+/*******************Heading styles*/
+h1{
+    font-size: 3rem;
+    width: 100%;
 }
 
-/*******************Heading styles*/
 h2{
     font-size: 2.5rem;
     line-height: 4rem;
@@ -42,12 +54,12 @@ h3{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem;
+    text-align: center;
 }
 
 /******************Section styles*/
 .container{
-    width: 80%;
-    margin: 2% 10%;
+    padding: 1rem 0;
 }
 
 /**************About Section*/
@@ -55,14 +67,23 @@ h3{
     margin: 0 auto;
 }
 
+.details{
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 2rem 1rem;
+}
+
 /**************Project Section*/
 .project-container{
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 100%;
 }
 
 .project{
     display: grid;
+    padding: 2rem 1rem 2rem 0.5rem;
 }
 
 .img{
@@ -72,7 +93,7 @@ h3{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 1rem;
+    margin: 0 auto;
 }
 
 .monkees-img{
@@ -91,6 +112,18 @@ h3{
     background-image: url("../img/unicorn.png");
 }
 
+.project-paragraph{
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer{
+    height: 3rem;
+}
+
 /***************Media Queries*/
 @media screen and (min-width: 768px) {
     .header{
@@ -99,12 +132,28 @@ h3{
 
     li{
         display: inline-block;
+        margin-left: 1rem;
         width: 15%;
     }
 
     .project-container{
-        width: 80%;
-        margin: 0 auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 6fr 6fr;
+    }
+
+    .project{
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-container{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+    }
+    
+    .project-container{
+        grid-template-columns: 3fr 3fr 3fr 3fr;
     }
 }
