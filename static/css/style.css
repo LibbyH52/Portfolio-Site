@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 .header{
     display: flex;
     flex-direction: column;
@@ -27,10 +31,64 @@ a{
     text-decoration: none;
 }
 
+/*******************Heading styles*/
+h2{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+}
 
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/******************Section styles*/
+.container{
+    width: 80%;
+    margin: 2% 10%;
+}
+
+/**************About Section*/
+.about-container{
+    margin: 0 auto;
+}
+
+/**************Project Section*/
 .project-container{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.project{
+    display: grid;
+}
+
+.img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.monkees-img{
+    background-image: url("../img/monkees.png");
+}
+
+.cereal-img{
+    background-image: url("../img/cereal.png");
+}
+
+.recipe-img{
+    background-image: url("../img/recipe.png");
+}
+
+.unicorn-img{
+    background-image: url("../img/unicorn.png");
 }
 
 /***************Media Queries*/
@@ -41,11 +99,12 @@ a{
 
     li{
         display: inline-block;
+        width: 15%;
     }
 
     .project-container{
         width: 80%;
         margin: 0 auto;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
