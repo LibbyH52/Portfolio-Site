@@ -28,6 +28,11 @@ a{
 }
 
 
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 /***************Media Queries*/
 @media screen and (min-width: 768px) {
     .header{
@@ -36,5 +41,11 @@ a{
 
     li{
         display: inline-block;
+    }
+
+    .project-container{
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
