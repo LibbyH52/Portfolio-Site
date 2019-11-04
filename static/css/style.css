@@ -13,6 +13,7 @@ body{
     background-size: contain;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     height: 90vh;
 }
@@ -39,8 +40,12 @@ li a{
 }
 
 /*******************Heading styles*/
-h1{
-    font-size: 3rem;
+.main-heading{
+    align-self: center;
+    color: #f1f1f1;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
     width: 100%;
 }
 
