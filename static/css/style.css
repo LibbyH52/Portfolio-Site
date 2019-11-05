@@ -8,14 +8,14 @@ body{
 }
 
 .header{
-    background-image: url("../img/apple-cellphone-colors.jpg");
+    background: #de425b;
     background-position: fixed;
     background-size: contain;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    height: 90vh;
+    height: 60vh;
 }
 /************Navigation styles*/
 nav{
@@ -43,22 +43,29 @@ li a{
 .main-heading{
     align-self: center;
     color: #f1f1f1;
-    font-size: 4rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
     font-weight: bolder;
     text-align: center;
     width: 100%;
 }
 
 h2{
-    color: #f03a47;
+    color: #de425b;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 2.5rem;
-    line-height: 4rem;
+    line-height: 3rem;
     text-align: center;
 }
 
 h3{
-    color: #af5b5b;
+    color: #488f31;
     font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Pacifico', cursive; */
     font-weight: bold;
     padding: 1rem;
     text-align: center;
@@ -66,6 +73,7 @@ h3{
 
 /******************Section styles*/
 .container{
+    background: #f1f1f1;
     padding: 1rem 0;
 }
 
@@ -75,6 +83,7 @@ h3{
 }
 
 .details{
+    font-family: 'Lobster', cursive;
     font-size: 1.25rem;
     margin: 0 auto;
     max-width: 90%;
@@ -82,11 +91,6 @@ h3{
 }
 
 /**************Project Section*/
-.project-section{
-    background: #d9d0de; 
-    padding-bottom: 1rem;
-}
-
 .project-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -95,7 +99,8 @@ h3{
 
 .project{
     display: grid;
-    padding: 2rem 1rem 2rem 0.5rem;
+    padding: .5rem 1rem 2rem 2rem;
+    margin: .5rem;
 }
 
 .img{
@@ -104,7 +109,6 @@ h3{
     background-size: cover;
     width: 200px;
     height: 200px;
-    border-radius: 10%;
     margin: 0 auto;
 }
 
@@ -133,8 +137,7 @@ h3{
 }
 
 .btn{
-    border-radius: 5%;
-    color: #f6f4f3;
+    color: #f1f1f1;
     display: block;
     font-size: 20px;
     padding: 5px;
@@ -149,11 +152,11 @@ a{
 }
 
 .btn-code{
-    background-color: #f03a47;
+    background-color: #488f31;
 }
 
 .btn-live{
-    background-color: #183059;
+    background-color: #de425b;
 }
 
 .footer{
@@ -169,7 +172,7 @@ a{
     li{
         display: inline-block;
         margin-left: 1rem;
-        width: 15%;
+        width: 12%;
     }
 
     .project-container{
@@ -183,7 +186,7 @@ a{
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
     .about-container{
         display: grid;
         grid-template-columns: 4fr 8fr;
