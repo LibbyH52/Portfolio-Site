@@ -8,10 +8,7 @@ body{
 }
 
 .header{
-    background-image: url("../img/coffee.jpg");
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #de425b;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -21,6 +18,7 @@ body{
 
 /************Navigation styles*/
 nav{
+    margin-bottom: .5rem;
     align-self: flex-end;
     width: 100%;
 }
@@ -31,8 +29,10 @@ ul{
 }
 
 li {
+    background: #f1f1f1;
     list-style-type: none;
     padding: 2rem;
+    text-align: center;
 }
 
 li a{
@@ -93,6 +93,22 @@ h3{
     max-width: 90%;
     padding: 2rem 1rem;
 }
+
+.skills-paragraph{
+    display: inline-block;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.progress-text{
+    color: #e67f83;
+}
+.progress-bar{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
 
 /**************Project Section*/
 .project-container{
@@ -177,8 +193,9 @@ a{
 
     li{
         display: inline-block;
-        margin-left: 1rem;
-        width: 12%;
+        margin-left: 0.5rem;
+        border: 1px solid #f1f1f1;
+        width: 15%;
     }
 
     .project-container{
