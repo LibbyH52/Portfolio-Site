@@ -8,15 +8,17 @@ body{
 }
 
 .header{
-    background: #de425b;
+    background-image: url("../img/coffee.jpg");
     background-position: fixed;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     height: 60vh;
 }
+
 /************Navigation styles*/
 nav{
     align-self: flex-end;
@@ -34,9 +36,11 @@ li {
 }
 
 li a{
-    color: #f1f1f1;
+    color: #de425b;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /*******************Heading styles*/
@@ -107,9 +111,11 @@ h3{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .monkees-img{
@@ -130,7 +136,7 @@ h3{
 
 .project-paragraph{
     font-size: 1.2rem;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
@@ -141,7 +147,7 @@ h3{
     display: block;
     font-size: 20px;
     padding: 5px;
-    width: 200px;
+    width: 190px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.5rem;
