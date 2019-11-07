@@ -93,10 +93,16 @@ h3{
     padding: 2rem 1rem;
 }
 
+/*************Skills Section*/
+/* .skills-container{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
 .skills-paragraph{
     margin: 0 auto;
-    width: 100%;
-}
+    width: 70%;
+} */
 
 .progress-text{
     color: #e67f83;
@@ -109,6 +115,13 @@ h3{
     width: 60%;
 }
 
+.skills{
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: .5rem;
+    padding: 1rem;
+}
 
 /**************Project Section*/
 .project-container{
@@ -183,6 +196,35 @@ a{
 
 .footer{
     height: 3rem;
+}
+
+/**************Contact Section*/
+#contact-form{
+    margin: 0 auto;
+    width: 40%;
+}
+
+.form-group{
+    margin-bottom: .5rem;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+input {
+    display: inline-block;
+    width: 70%;
+}
+
+textarea{
+    display: inline-block;
+    width: 70%;
+}
+
+#message-details{
+    vertical-align: top;
 }
 
 /***************Media Queries*/

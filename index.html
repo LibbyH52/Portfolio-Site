@@ -25,25 +25,22 @@
         <div class="details">
             <p>
                 Flexible and adaptable with the bulk of my experience coming from administrative positions. I am an effective communicator and good team player who has worked with a variety of different people from a range of backgrounds. 
-                Currently undertaking a Diploma in Software Development to acquire new skills and expand on existing ones in an interesting and diverse area. 
                 <br>
                 I recently completed Code Insititute's Full Stack Diploma in Software Development and am currently working on my Frontend skills and expanding my javascript knowledge. 
             </p>
-        </section>
-        <section class="container skills-container">
-                <h3>Skills</h3> 
-                <p class="skills-paragraph">
-                    <span class="progress-text">HTML</span><progress class="progress-bar" value="70" max="100" placeholder="HTML"></progress><br>
-                    <span class="progress-text">CSS</span><progress class="progress-bar" value="70" max="100"></progress><br>
-                    <span class="progress-text">Bootstrap</span><progress class="progress-bar" value="70" max="100"></progress><br>
-                    <span class="progress-text">Javascript</span><progress class="progress-bar" value="60" max="100"></progress><br> 
-                </p>
-                <p class="skills-paragraph">
-                    <span class="progress-text">Python</span><progress class="progress-bar" value="60" max="100" placeholder="HTML"></progress><br>
-                    <span class="progress-text">Flask</span><progress class="progress-bar" value="50" max="100"></progress><br>
-                    <span class="progress-text">Django</span><progress class="progress-bar" value="60" max="100"></progress><br> 
-                </p>
-            </div>   
+            <h3>Skills</h3> 
+            <div class="skills-div">
+                <span class="skills">HTML</span>
+                <span class="skills">CSS</span>
+                <span class="skills">JavaScript</span>
+                <span class="skills">Python</span>
+                <span class="skills">Django</span>
+                <span class="skills">Bootstrap</span>
+                <span class="skills">MongoDB</span>
+                <span class="skills">Postgresql</span>
+                <span class="skills">VSCode</span>
+            </div>
+        </div>   
     </section>
     <section class="container" id="projects">
             <h2>Projects</h2>
@@ -85,12 +82,24 @@
         <section class="container" id="contact">
                 <h2>Contact</h2>
                 <div class="contact-container">
-                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam cupiditate at sunt, recusandae sequi voluptates maxime placeat neque fuga sed illum ipsam iusto blanditiis dolorem quaerat? Sint facilis aliquam unde.
-                   Dolorum, cupiditate perspiciatis? Ad similique officia magni dolorem ab molestiae perferendis, deserunt nesciunt commodi modi facilis obcaecati facere expedita, veritatis nobis non libero eligendi neque necessitatibus. Aliquid adipisci illo iusto.
-                   Iure illum repellendus optio harum atque quisquam doloribus vitae unde ea rerum iusto quod, dolores nemo? Est nisi tenetur, fugiat ad ipsa voluptas sunt optio quis accusamus harum possimus aut.
-                   Tempore consequuntur magnam, possimus qui voluptatibus maxime quo voluptatem, accusamus iste aspernatur libero adipisci. Facere, veritatis sint velit, quis eius, unde ipsum consequuntur repellendus ipsam ut laboriosam maiores recusandae accusantium.
-                   Aliquid vel omnis fuga autem nemo, itaque harum assumenda inventore recusandae reiciendis possimus corporis sint, at, numquam aliquam enim voluptatibus rerum fugiat? Quaerat minima, reiciendis accusamus incidunt tempora magni natus.
-                   Repellendus molestias accusantium sed laborum eius assumenda saepe dicta eum officiis totam, quas voluptate expedita nostrum id! Corrupti blanditiis provident dolores ab cupiditate, sunt eos aliquid voluptatum saepe dolorum? Fugit.</p>
+                   <form action="#" id="contact-form">
+                       <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" required>
+                       </div>
+                       <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email">
+                       </div>
+                       <div class="form-group">
+                            <label for="subject">Subject: </label>
+                            <input type="text" name="subject" required>
+                       </div>
+                       <div class="form-group">
+                            <label for="message" id="message-details">Message: </label>
+                            <textarea name="message" id="#message-details" cols="30" rows="10"></textarea>
+                       </div>
+                   </form>
                 </div>
             </section>
             <footer class="footer">
