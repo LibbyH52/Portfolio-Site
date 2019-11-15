@@ -3,38 +3,54 @@ html{
 }
 
 body{
-    max-width: 90%;
     margin: 0 auto;
 }
 
 .header{
-    background: #de425b;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #de425b;
+}
+
+.header-img{
+    display: block;
     background-image: url(../img/coffee.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.info{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    height: 60vh;
+    justify-content: left;
 }
 
 /************Navigation styles*/
-nav{
-    position: fixed;
-    margin-bottom: 2rem;
-    align-self: baseline;
+.navigation{
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
 ul{
-    width: 70%;
+    width: 100%;
+    display: block;
+    margin: .5rem auto 0 auto;
+    padding: 0 .75rem;
 }
 
 li {
+    display: inline-block;
     list-style-type: none;
     padding: 1rem 1rem 1rem 0;
+    border: 1px solid #f1f1f1;
+    width: 40%;
+    margin: 0;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -58,199 +74,29 @@ li a{
     width: 100%;
 }
 
-h2{
-    color: #de425b;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Lobster', cursive;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    text-align: center;
-}
-
-h3{
-    color: #488f31;
-    font-size: 1.5rem;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Lobster', cursive;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-}
-
-/******************Section styles*/
-.container{
-    background: #f1f1f1;
-    padding: 4rem 0 1rem 0;
-}
-
-/**************About Section*/
-.about-container{
-    margin: 0 auto;
-}
-
-.details{
-    font-family: 'Lobster', cursive;
-    font-size: 1.25rem;
-    margin: 0 auto;
-    max-width: 90%;
-    padding: 2rem 1rem;
-}
-
-.skills{
-    display: inline-block;
-    font-size: 2rem;
-    margin: .5rem;
-    padding: .5rem;
-}
-
-/**************Project Section*/
-.project-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 100%;
-}
-
-.project{
-    display: grid;
-    padding: .5rem 1rem 2rem 2rem;
-    margin: .5rem;
-}
-
-.img{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.monkees-img{
-    background-image: url("../img/monkees.png");
-}
-
-.cereal-img{
-    background-image: url("../img/cereal.png");
-}
-
-.recipe-img{
-    background-image: url("../img/recipe.png");
-}
-
-.unicorn-img{
-    background-image: url("../img/unicorn.png");
-}
-
-.project-paragraph{
-    font-size: 1.2rem;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    text-align: center;
-}
-
-.btn{
-    color: #f1f1f1;
-    display: block;
-    font-size: 20px;
-    padding: 5px;
-    width: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
-}
-
-a{
-    text-decoration: none;
-}
-
-.btn-code{
-    background-color: #488f31;
-}
-
-.btn-live{
-    background-color: #de425b;
-}
-
-.footer{
-    height: 8rem;
-}
-
-/**************Contact Section*/
-#contact-form{
-    margin: 0 auto;
-    width: 40%;
-}
-
-.form-group{
-    margin-bottom: .5rem;
-}
-
-label{
-    display: inline-block;
-    width: 80px;
-}
-
-input {
-    display: inline-block;
-    height: 18px;
-    width: 70%;
-}
-
-textarea{
-    display: inline-block;
-    width: 70%;
-}
-
-#message-details{
-    vertical-align: top;
-}
-
 /***************Media Queries*/
 @media screen and (min-width: 768px) {
     .header{
-        flex-direction: row;
+        display: grid;
+        grid-template-rows: 12fr;
+        grid-template-columns: 4fr 6fr;
+        width: 100%;
     }
 
     li{
         display: inline-block;
-        margin-left: 0.5rem;
         border: 1px solid #f1f1f1;
-        width: 18%;
-    }
-
-    .project-container{
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-columns: 6fr 6fr;
-    }
-
-    .project{
-        padding-right: 1rem;
-    }
-
-    .skills-paragraph{
-        display: inline-block;
-        width: 48%;
-    }
-    
-    .progress-text{
-        width: 90px;
-    }
-    .progress-bar{
-        width: 65%;
+        width: 20%;
+        margin: 0 0.1rem;
     }
 }
 
 @media screen and (min-width: 1025px) {
-    .about-container{
-        display: grid;
+    .header{
         grid-template-columns: 4fr 8fr;
     }
-    
-    .project-container{
-        grid-template-columns: 3fr 3fr 3fr 3fr;
+
+    ul{
+        padding: 0;
     }
 }
