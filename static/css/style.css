@@ -18,7 +18,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 100%;
 }
 
 .info{
@@ -58,19 +58,31 @@ li a{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
+    width: 100%;
     text-transform: uppercase;
 }
 
 /*******************Heading styles*/
-.main-heading{
-    align-self: center;
+.main-heading, 
+.title{
     color: #f1f1f1;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Lobster', cursive;
-    font-size: 3.5rem;
-    font-weight: bolder;
-    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-left: 1rem;
     width: 100%;
+}
+
+.main-heading{
+    align-self:center;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.title{
+    align-self: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 /***************Media Queries*/
