@@ -9,7 +9,7 @@ body{
 .header{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: #de425b;
+    background-color: #003f5c;
 }
 
 .header-img{
@@ -42,6 +42,22 @@ ul{
     width: 100%;
     margin: 0 auto;
     padding: 0;
+}
+
+.home{
+    background-color: #ff6361;
+}
+
+.about{
+    background-color: #bc5090;
+}
+
+.projects{
+    background-color: #58508d;
+}
+
+.contact{
+    background-color: #ffa600;
 }
 
 li {
@@ -84,7 +100,31 @@ li a{
     margin-top: 1rem;
 }
 
-/*****************Icon styles*/
+/******************Section styles*/
+.container{
+    background: #f1f1f1;
+    padding: 4rem 0 1rem 0;
+}
+
+/**************About Section*/
+.about-container{
+    margin: 0 auto;
+}
+
+.details{
+    font-family: 'Lobster', cursive;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 2rem 1rem;
+}
+
+.skills{
+    display: inline-block;
+    font-size: 2rem;
+    margin: .5rem;
+    padding: .5rem;
+}
 
 /***************Media Queries*/
 @media screen and (min-width: 768px) {
@@ -114,11 +154,16 @@ li a{
 
 @media screen and (min-width: 1025px) {
     .header{
-        grid-template-columns: 4fr 8fr;
+        grid-template-columns: 3fr 9fr;
     }
 
     .header-img{
         height: 100%;
+    }
+
+    .about-container{
+        display: grid;
+        grid-template-columns: 3fr 9fr;
     }
 
 }
