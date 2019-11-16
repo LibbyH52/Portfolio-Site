@@ -100,6 +100,29 @@ li a{
     margin-top: 1rem;
 }
 
+h2{
+    color: #de425b;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+h3{
+    color: #488f31;
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-heading{
+    color: #bc5090;
+}
+
 /******************Section styles*/
 .container{
     background: #f1f1f1;
