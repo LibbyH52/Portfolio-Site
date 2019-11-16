@@ -127,6 +127,7 @@ h3{
 .container{
     background: #f1f1f1;
     padding: 4rem 0 1rem 0;
+    color: #003f5c;
 }
 
 /**************About Section*/
@@ -147,6 +148,111 @@ h3{
     font-size: 2rem;
     margin: .5rem;
     padding: .5rem;
+}
+
+/**************Project Section*/
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+
+.project{
+    display: grid;
+    padding: .5rem 1rem 2rem 2rem;
+    margin: .5rem;
+}
+
+.img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.monkees-img{
+    background-image: url("../img/monkees.png");
+}
+
+.cereal-img{
+    background-image: url("../img/cereal.png");
+}
+
+.recipe-img{
+    background-image: url("../img/recipe.png");
+}
+
+.unicorn-img{
+    background-image: url("../img/unicorn.png");
+}
+
+.project-paragraph{
+    font-size: 1.2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn{
+    color: #f1f1f1;
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-code{
+    background-color: #488f31;
+}
+
+.btn-live{
+    background-color: #de425b;
+}
+
+/**************Contact Section*/
+#contact-form{
+    margin: 0 auto;
+    width: 40%;
+}
+
+.form-group{
+    margin-bottom: .5rem;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+input {
+    display: inline-block;
+    height: 18px;
+    width: 70%;
+}
+
+textarea{
+    display: inline-block;
+    width: 70%;
+}
+
+#message-details{
+    vertical-align: top;
+}
+
+.footer{
+    height: 8rem;
 }
 
 /***************Media Queries*/
@@ -173,6 +279,21 @@ h3{
     .title{
         font-size: 2rem;
     }
+
+    .project-container{
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 6fr 6fr;
+    }
+
+    .project{
+        padding-right: 1rem;
+    }
+
+    .skills-paragraph{
+        display: inline-block;
+        width: 48%;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -187,6 +308,10 @@ h3{
     .about-container{
         display: grid;
         grid-template-columns: 3fr 9fr;
+    }
+
+    .project-container{
+        grid-template-columns: 3fr 3fr 3fr 3fr;
     }
 
 }
