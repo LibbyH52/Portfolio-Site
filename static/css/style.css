@@ -347,9 +347,9 @@ textarea{
         height: 100%;
     }
 
-    .about-container{
+    .about-div{
         display: grid;
-        grid-template-columns: 5fr 7fr;
+        grid-template-columns: 2fr 10fr;
         padding: 1rem 2rem;
     }
 
