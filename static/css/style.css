@@ -49,41 +49,6 @@ body{
     color: #4584b6;
 }
 
-/***********Progress Bar styles*/
-progress{
-    width: 250px;
-    margin: .5rem auto;
-}
-
-.progress-text{
-    width: 75px;
-    padding: 1rem;
-}
-
-.html::-moz-progress-bar,
-.html::-webkit-progress-bar,
-.html::-webkit-progress-bar-value{
-    background: #e34f26;
-}
-
-.css::-moz-progress-bar,
-.css::-webkit-progress-bar,
-.css::-webkit-progress-bar-value{
-    background: #1f76c2;
-}
-
-.js::-moz-progress-bar,
-.js::-webkit-progress-bar,
-.js::-webkit-progress-bar-value{
-    background: #f7df1e;
-}
-
-.python::-moz-progress-bar,
-.python::-webkit-progress-bar,
-.python::-webkit-progress-bar-value{
-    background:  #4584b6;
-}
-
 /************Navigation styles*/
 .navigation{
     align-self: flex-end;
@@ -211,6 +176,8 @@ h3{
 /**************About Section*/
 .about-container{
     margin: 0 auto;
+    width: 90%;
+    max-width: 90%;
 }
 
 .details{
@@ -367,11 +334,6 @@ textarea{
     .project{
         padding-right: 1rem;
     }
-
-    .skills-paragraph{
-        display: inline-block;
-        width: 48%;
-    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -384,14 +346,12 @@ textarea{
     }
 
     /***************************this is new 24/11/2019*************************/
-    .about-container{
-        display: grid;
-    }
-
     .about-div{
         display: grid;
-        grid-template-columns: 7fr 5fr;
+        grid-template-columns: 12fr;
+        margin: 0 auto;
         padding: 1rem 2rem;
+        width: 75%;
     }
 
     .project-container{
