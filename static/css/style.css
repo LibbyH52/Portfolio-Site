@@ -27,6 +27,7 @@ body{
     flex-wrap: wrap;
     justify-content: left;
 }
+
 /*******************Icon styles*/
 .fab{
     font-size: 3.5rem;
@@ -73,20 +74,30 @@ ul{
     background-color: #bc5090;
 }
 
-.HTML,
-.CSS,
-.Bootstrap{
-    width: 70%;
+.about-div{
+    display: grid;
+    grid-template-columns: 12fr;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 95%;
 }
 
-.JS,
-.Python,
-.Django{
-    width: 60%
+.skills-div{
+    margin: 2px auto;
 }
 
-.Flask{
-    width: 55%;
+.skill{
+    background:  #4584b6;
+    border: 2px solid #4584b6; 
+    border-radius: 50%;
+    color: #f1f1f1;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px;
+    padding: 4%;
+    text-align: center;
+    width: 100px;
 }
 
 .projects{
@@ -345,17 +356,12 @@ textarea{
         height: 100%;
     }
 
-    /***************************this is new 24/11/2019*************************/
     .about-div{
-        display: grid;
-        grid-template-columns: 12fr;
-        margin: 0 auto;
-        padding: 1rem 2rem;
         width: 75%;
     }
 
     .project-container{
-        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-template-columns: 3fr 3fr 3fr 3fr; 
     }
 
 }
