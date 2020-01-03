@@ -30,7 +30,7 @@ body{
 
 /*******************Icon styles*/
 .fab{
-    font-size: 3.5rem;
+    font-size: 4rem;
     padding: 1.5rem;
 }
 
@@ -78,19 +78,21 @@ ul{
     display: grid;
     grid-template-columns: 12fr;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0;
     width: 95%;
 }
 
-.skills-div{
-    margin: 2px auto;
+/******************************Skills section*/
+#skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
 }
 
 .skill{
-    background:  #4584b6;
-    border: 2px solid #4584b6; 
-    border-radius: 50%;
-    color: #f1f1f1;
+    color: #003f5c;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
@@ -342,8 +344,39 @@ textarea{
         grid-template-columns: 6fr 6fr;
     }
 
+    #about{
+        background: url(../img/matrix.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 6rem 0;
+    }
+
+    .about-div{
+        background: #f1f1f1;
+        padding: 1rem 2rem;
+        width: 80%;
+    }
+
+    #skills{
+        background: url(../img/matrix.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-bottom: 5rem;
+    }
+
+    .skills-div{
+        width: 70%;
+        background: #f1f1f1;
+    }
+
     .project{
         padding-right: 1rem;
+        border: 1px solid #f1f1f1;
+        color: #f1f1f1;
     }
 }
 
@@ -357,7 +390,8 @@ textarea{
     }
 
     .about-div{
-        width: 75%;
+        background: #f1f1f1;
+        width: 45%;
     }
 
     .project-container{
