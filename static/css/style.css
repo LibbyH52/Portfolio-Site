@@ -5,6 +5,7 @@ html{
 
 body{
     margin: 0 auto;
+    background: #f2f1f1;
 }
 
 .header{
@@ -40,9 +41,10 @@ body{
     font-size: 18px;
     font-weight: 800;
 }
+
 /*******************Heading Styles*/
 .main-heading{
-    color: #AD334D;
+    color: #f1f1f1;
     font-family: 'Lobster', cursive;
     font-size: 3.5rem;
     font-weight: 800;
@@ -54,6 +56,34 @@ h2.main-heading{
     font-size: 1.75rem;
 }
 
+
+/*********************Section Styles*/
+.section-container{
+    background: #f1f1f1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+/*********************About Section*/
+.about-div{
+    color: #263656;
+    display: grid;
+    grid-template-columns: 12fr;
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+}
+
+.details{
+    font-family: 'Lobster', cursive;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 2rem 1rem;
+    word-spacing: 4px;
+}
 
 /*********************Media Queries*/
 @media screen and (min-width: 768px){
@@ -83,5 +113,19 @@ h2.main-heading{
         color: #f1f1f1;
         font-size: 18px;
         font-weight: 800;
+    }
+
+    .about-div{
+        background: #263656;
+        color: #f2f1f1;
+        margin: 2rem auto;
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .about-div{
+        font-size: 2rem;
+        width: 40%;
     }
 }
