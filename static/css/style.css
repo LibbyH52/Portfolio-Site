@@ -5,7 +5,6 @@ html{
 
 body{
     margin: 0 auto;
-    background: #f2f1f1;
 }
 
 .header{
@@ -17,7 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 60vh;
     justify-content: center;
     max-width: 100%;
 }
@@ -56,12 +55,33 @@ h2.main-heading{
     font-size: 1.75rem;
 }
 
+h2.projects,
+h3.projects{
+    color: #b64963;
+    background: none;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h3{
+    color: #b64963;
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-div h3{
+    color: #263656;
+}
 
 /*********************Section Styles*/
-.section-container{
+.container{
     background: #f1f1f1;
     width: 100%;
-    margin: 0 auto;
+    margin: 25px auto;
     padding: 5rem 0;
 }
 
@@ -85,7 +105,123 @@ h2.main-heading{
     word-spacing: 4px;
 }
 
+/*********************Project Section*/
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+
+.project{
+    display: grid;
+    padding: .5rem 1rem 2rem 2rem;
+    margin: .5rem;
+}
+
+.img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.monkees-img{
+    background-image: url("../img/monkees.png");
+}
+
+.cereal-img{
+    background-image: url("../img/cereal.png");
+}
+
+.recipe-img{
+    background-image: url("../img/recipe.png");
+}
+
+.unicorn-img{
+    background-image: url("../img/unicorn.png");
+}
+
+.project-paragraph{
+    font-size: 1.2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn{
+    color: #f2f1f1;
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-code{
+    background-color: #b6496c;
+}
+
+.btn-live{
+    background-color: #263656;
+}
+
+/**************************Icon Styles*/
+
+.fab{
+    display: inline;
+    font-size: 4rem;
+}
+
+.fa-css3-alt{
+    color: #1f76c2;
+}
+
+.fa-html5{
+    color: #e34f26;
+}
+
+.fa-js-square{
+    color: #f7df1e;
+}
+
+.fa-python{
+    color: #4584b6;
+}
+
+
+.skills-div{
+    display: inline-grid;
+    grid-template-columns: 6fr 6fr;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.skill{
+    color: #003f5c;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px;
+    padding: 4%;
+    text-align: center;
+    width: 100px;
+}
+
 /*********************Media Queries*/
+
 @media screen and (min-width: 768px){
     .main-heading{
         font-size: 4rem;
@@ -121,11 +257,45 @@ h2.main-heading{
         margin: 2rem auto;
         width: 75%;
     }
+
+    .about-div h3{
+        color: #f2f1f1;
+    }
+
+    .project-container{
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 6fr 6fr;
+    }
+
+    .skills-div{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    }
+
+    .skill{
+        margin: 0 20px;
+    }
 }
 
 @media screen and (min-width: 992px){
     .about-div{
         font-size: 2rem;
         width: 40%;
+    }
+
+    .project-container{
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .fab{
+        font-size: 6rem;
+    }
+
+    .skill{
+        margin: 30px;
+        width: 90%;
     }
 }
