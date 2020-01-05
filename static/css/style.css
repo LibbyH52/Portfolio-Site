@@ -18,18 +18,18 @@ body{
 }
 
 .navbar-toggler .navbar-toggler-icon{
-    color: #f1f1f1;
+    color: #b19f9e;
 }
 
 .navbar-nav .nav-item .nav-link{
-    color: #f1f1f1;
+    color: #b19f9e;
     font-size: 18px;
     font-weight: 800;
 }
 
 /*******************Heading Styles*/
 .main-heading{
-    color: #f1f1f1;
+    color: #b19f9e;
     font-family: 'Lobster', cursive;
     font-size: 3.5rem;
     font-weight: 800;
@@ -41,27 +41,29 @@ h2.main-heading{
     font-size: 1.75rem;
 }
 
-h2.projects,
-h3.projects{
-    color: #b64963;
-    background: none;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+h2{
+    font-family: 'Lobster', cursive;
 }
 
 h3{
-    color: #b64963;
+    color: #479761;
     font-size: 1.5rem;
-    font-family: 'Anton', sans-serif;
     font-family: 'Lobster', cursive;
     font-weight: bold;
     padding: 1rem;
     text-align: center;
 }
 
+h2.projects,
+h3.projects{
+    color: #479761;
+    background: none;
+    text-align: center;
+}
+
 .about-heading{
     align-self: center;
-    color: #f2f1f1;
+    color: #f1f1f1;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -96,15 +98,16 @@ h3{
 
 /*********************Section Styles*/
 .container-fluid{
-    background: #f1f1f1;
+    background: rgba(200, 100, 200, 0.2);
     width: 100%;
-    margin: 25px auto;
-    padding: 6rem 0;
+    margin: 10px auto;
+    padding: 4rem 0;
 }
 
 /*********************About Section*/
 .about-div{
-    color: #263656;
+    background: #f1f1f1;
+    color: #19181a;
     display: grid;
     grid-template-columns: 12fr;
     margin: 0 auto;
@@ -187,11 +190,11 @@ a{
 }
 
 .btn-code{
-    background-color: #b6496c;
+    background-color: #479761;
 }
 
 .btn-live{
-    background-color: #263656;
+    background-color: #19181a;
 }
 
 /**************************Icon Styles*/
@@ -200,23 +203,6 @@ a{
     display: inline;
     font-size: 4rem;
 }
-
-.fa-css3-alt{
-    color: #1f76c2;
-}
-
-.fa-html5{
-    color: #e34f26;
-}
-
-.fa-js-square{
-    color: #f7df1e;
-}
-
-.fa-python{
-    color: #4584b6;
-}
-
 
 .skills-div{
     display: inline-grid;
@@ -227,7 +213,7 @@ a{
 }
 
 .skill{
-    color: #003f5c;
+    color: #17181a;
     display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
@@ -235,6 +221,26 @@ a{
     padding: 4%;
     text-align: center;
     width: 100px;
+}
+
+.bootstrap{
+    color: #563d7c;
+}
+
+.css{
+    color: #1f76c2;
+}
+
+.html{
+    color: #e34f26;
+}
+
+.javascript{
+    color: #f7df1e;
+}
+
+.python{
+    color: #4584b6;
 }
 
 /*********************Media Queries*/
@@ -249,7 +255,7 @@ a{
     }
 
     .navbar{
-        background: rgba(50, 50, 50, 0.3);
+        background: rgba(30, 10, 30, 0.9);
         margin-bottom: 4rem;
     }
 
@@ -263,15 +269,15 @@ a{
     }
 
     .navbar-nav .nav-item .nav-link{
-        color: #f1f1f1;
+        color: #b19f9e;
         font-size: 18px;
         font-weight: 800;
         text-transform: uppercase;
     }
 
     .about-div{
-        border: 2px solid #263656;
-        color: #263656;
+        border: 2px solid #17252a;
+        color: #17252a;
         margin: 2rem auto;
         width: 75%;
     }
