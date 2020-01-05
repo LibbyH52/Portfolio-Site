@@ -4,7 +4,10 @@ html{
 }
 
 body{
-    margin: 0 auto;
+    background: rgba(200, 100, 200, 0.2);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 8rem;
 }
 
 /*****************Navigation Styles*/
@@ -17,6 +20,7 @@ body{
     margin-bottom: 4rem;
 }
 
+/*Code found on stack overflow. See readme for more info*/
 .navbar-toggler .navbar-toggler-icon{
     color: #b19f9e;
 }
@@ -98,10 +102,16 @@ h3.projects{
 
 /*********************Section Styles*/
 .container-fluid{
-    background: rgba(200, 100, 200, 0.2);
     width: 100%;
     margin: 10px auto;
     padding: 4rem 0;
+}
+
+hr{
+    background: #cebc81;
+    border-width: 4px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 /*********************About Section*/
@@ -241,6 +251,36 @@ a{
 
 .python{
     color: #4584b6;
+}
+
+/**********************Footer Styles*/
+.footer{
+    background: #b19f9e;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    min-height: 5rem;
+    padding: 0;
+}
+
+.footer .contact-details{
+    color: #19181a;
+    float: right;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.footer .fab{
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
+.fa-linkedin{
+    color: #0a66c2;
+}
+
+.fa-github{
+    color: #6a0dad;
 }
 
 /*********************Media Queries*/
