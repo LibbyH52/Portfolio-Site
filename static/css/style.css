@@ -59,8 +59,11 @@ h3{
     text-align: center;
 }
 
-.about-div h3{
-    color: #263656;
+.about-heading{
+    align-self: center;
+    color: #f2f1f1;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 /**********************Header Styles*/
@@ -84,18 +87,19 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    display: block;
+    display: flex;
     margin: 10px auto;
     height: 200px;
+    justify-content: center;
     width: 200px;    
 }
 
 /*********************Section Styles*/
-.container{
+.container-fluid{
     background: #f1f1f1;
     width: 100%;
     margin: 25px auto;
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 /*********************About Section*/
@@ -266,14 +270,10 @@ a{
     }
 
     .about-div{
-        background: #263656;
-        color: #f2f1f1;
+        border: 2px solid #263656;
+        color: #263656;
         margin: 2rem auto;
         width: 75%;
-    }
-
-    .about-div h3{
-        color: #f2f1f1;
     }
 
     .project-container{
