@@ -189,7 +189,10 @@ hr{
     text-align: center;
 }
 
-.btn{
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active{
     color: #f2f1f1;
     display: block;
     font-size: 20px;
