@@ -370,12 +370,15 @@ a{
         margin: 0 20px;
     }
 
+    .footer .contact{
+        background: rgba(50, 50, 50, 0.6);
+    }
+
     .footer p{
         display: inline-block;
     }
 
     .footer .contact-details{
-        background: rgba(50, 50, 50, 0.6);
         float: right;
         width: 50%;
     }
