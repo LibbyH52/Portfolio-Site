@@ -16,7 +16,7 @@ body{
 }
 
 .navbar{
-    background: rgba(50, 50, 50, 0.3);
+    background: purple;
     margin-bottom: 4rem;
 }
 
@@ -33,11 +33,14 @@ body{
 
 /*******************Heading Styles*/
 .main-heading{
-    color: #b19f9e;
+    color: rgb(219, 29, 105);
     font-family: 'Lobster', cursive;
     font-size: 3.5rem;
+    font-variant: small-caps;
     font-weight: 800;
     line-height: 4.5rem;
+    -webkit-text-stroke: 2px rgb(100, 100, 100);
+    -moz-text-stroke: 2px rgb(100, 100, 100);    
 }
 
 h2.main-heading{
@@ -75,7 +78,7 @@ h3.projects{
 /**********************Header Styles*/
 
 .header{
-    background: url(../img/background-circuit.jpg);
+    background: url(../img/mobile-devices.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -308,15 +311,15 @@ a{
 
 @media screen and (min-width: 768px){
     .main-heading{
-        font-size: 4rem;
+        font-size: 5.5rem;
     }
     
     h2.main-heading{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .navbar{
-        background: rgba(30, 10, 30, 0.9);
+        background: purple;
         margin-bottom: 4rem;
     }
 
