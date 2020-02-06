@@ -166,19 +166,19 @@ hr{
     margin-right: auto;
 }
 
-.monkees-img{
+#monkees-img{
     background-image: url("../img/monkees.png");
 }
 
-.cereal-img{
+#cereal-img{
     background-image: url("../img/cereal.png");
 }
 
-.recipe-img{
+#recipe-img{
     background-image: url("../img/recipe.png");
 }
 
-.unicorn-img{
+#unicorn-img{
     background-image: url("../img/unicorn.png");
 }
 
@@ -223,27 +223,15 @@ a{
     font-size: 4rem;
 }
 
-#skills{
-    background: #b19f9e;
-}
-
-.skills-div{
-    display: inline-grid;
-    grid-template-columns: 6fr 6fr;
-    font-size: 2rem;
-    margin: 2rem;
-    padding: 1rem;
-}
-
 .skill{
+    border: 1px solid #17181a;
     color: #17181a;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
-    margin: 10px;
+    margin: 5px;
     padding: 4%;
     text-align: center;
-    width: 100px;
 }
 
 .bootstrap{
@@ -366,10 +354,6 @@ a{
         grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
     }
 
-    .skill{
-        margin: 0 20px;
-    }
-
     .footer .contact{
         background: rgba(50, 50, 50, 0.6);
     }
@@ -398,11 +382,6 @@ a{
 
     .fab{
         font-size: 6rem;
-    }
-
-    .skill{
-        margin: 30px;
-        width: 90%;
     }
 
     .copyright{
