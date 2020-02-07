@@ -149,22 +149,24 @@ hr{
 .project-container{
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+    padding-bottom: 6rem;
 }
 
 .project{
     display: grid;
-    padding: .5rem 1rem 2rem 2rem;
-    margin: .5rem;
+    height: 300px;
 }
 
 .img{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 2px solid #f2f2f2;
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -185,7 +187,8 @@ hr{
     background-image: url("../img/unicorn.png");
 }
 
-.project-paragraph{
+.project-details{
+    display: none;
     font-size: 1.2rem;
     max-width: 100%;
     margin: 0 auto;
@@ -224,17 +227,6 @@ a{
 .fab{
     display: inline;
     font-size: 4rem;
-}
-
-.skill{
-    border: 1px solid #17181a;
-    color: #17181a;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 5px;
-    padding: 4%;
-    text-align: center;
 }
 
 .bootstrap{
@@ -350,11 +342,7 @@ a{
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: 6fr 6fr;
-    }
-
-    .skills-div{
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        width: 90%;
     }
 
     .footer .contact{
@@ -397,5 +385,6 @@ a{
         grid-template-columns: 3fr 3fr 3fr 3fr;
         align-content: center;
         justify-content: center;
+        width: 90%;
     }
 }
