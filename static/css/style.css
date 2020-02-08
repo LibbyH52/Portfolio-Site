@@ -230,6 +230,53 @@ a{
     background-color: #19181a;
 }
 
+/*************************Skills Section*/
+.skills-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.outer{
+    border: 1px solid purple;
+    height: 40px;
+    width: 90%;
+    margin: 5px auto;
+    padding: .5rem;
+}
+
+.skill-level{
+    border: 1px solid purple;
+    color: #f2f2f2;
+    font-size: 25px;
+    font-variant: small-caps;
+    font-weight: 600;
+    line-height: 25px;
+    height: 25px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+#html, #css, #js{
+    background: linear-gradient( to right, purple 70%, #f2f2f2 30%);
+    height: 25px;
+}
+
+#bootstrap{
+        background: linear-gradient( to right, purple 60%, #f2f2f2 40%);
+        height: 25px;
+}
+
+#python, #django{
+    background: linear-gradient( to right, purple 60%, #f2f2f2 40%);
+    height: 25px;
+}
+
+#flask{
+    background: linear-gradient( to right, purple 50%, #f2f2f2 50%);
+    height: 25px;
+}
+
 /**************************Icon Styles*/
 
 .fab{
@@ -259,9 +306,8 @@ a{
 
 /**********************Footer Styles*/
 .footer{
-    background: url(../img/background-circuit.jpg);
+    background: purple;
     background-attachment: fixed;
-    background-size: cover;
     bottom: 0;
     position: absolute;
     width: 100%;
@@ -300,7 +346,7 @@ a{
 }
 
 .fa-linkedin{
-    color: #0a66c2;
+    color: #ffffff;
 }
 
 .fa-github{
@@ -351,6 +397,11 @@ a{
         margin-right: auto;
         grid-template-columns: 6fr 6fr;
         width: 90%;
+    }
+
+    .outer{
+        display: inline-block;
+        width: 45%;
     }
 
     .footer .contact{
