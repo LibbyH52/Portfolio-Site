@@ -33,14 +33,16 @@ body{
 
 /*******************Heading Styles*/
 .main-heading{
-    color: rgb(219, 29, 105);
+    color: #bc5090;
     font-family: 'Lobster', cursive;
     font-size: 3.5rem;
     font-variant: small-caps;
     font-weight: 800;
     line-height: 4.5rem;
-    -webkit-text-stroke: 2px rgb(100, 100, 100);
-    -moz-text-stroke: 2px rgb(100, 100, 100);    
+    -webkit-text-stroke: 2px #f1f1f1;
+    -moz-text-stroke: 2px #f1f1f1; 
+    -o-text-stroke: 2px #f1f1f1; 
+    -ms-text-stroke: 2px #f1f1f1;    
 }
 
 h2.main-heading{
@@ -63,7 +65,7 @@ h3{
 
 h2.projects,
 h3.projects{
-    color: #479761;
+    color: #f1f1f1;
     background: none;
     text-align: center;
 }
@@ -78,7 +80,8 @@ h3.projects{
 /**********************Header Styles*/
 
 .header{
-    background: url(../img/mobile-devices.png);
+    /* background: url(../img/mobile-devices.png); */
+    background: url(../img/binary.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,7 +124,7 @@ hr{
 /*********************About Section*/
 
 #about{
-    background: #b19f9e;
+    background: #f1f1f1;
 }
 
 .about-div{
@@ -145,6 +148,9 @@ hr{
 }
 
 /*********************Project Section*/
+#projects{
+    background: #003f5c;
+}
 
 .project-container{
     display: grid;
@@ -181,6 +187,10 @@ hr{
 
 .project:hover .project-details{
     opacity: 1;
+}
+
+#skills{
+    background: #f1f1f1;
 }
 
 .skills{
@@ -237,7 +247,8 @@ a{
 }
 
 .outer{
-    border: 1px solid purple;
+    border: 1px solid #58508d;
+    border-radius: 4px;
     height: 40px;
     width: 90%;
     margin: 5px auto;
@@ -245,7 +256,8 @@ a{
 }
 
 .skill-level{
-    border: 1px solid purple;
+    border: 1px solid #58508d;
+    border-radius: 4px;
     color: #f2f2f2;
     font-size: 25px;
     font-variant: small-caps;
@@ -258,22 +270,22 @@ a{
 }
 
 #html, #css, #js{
-    background: linear-gradient( to right, purple 70%, #f2f2f2 30%);
+    background: linear-gradient( to right, #bc5090 70%, #f2f2f2 30%);
     height: 25px;
 }
 
 #bootstrap{
-        background: linear-gradient( to right, purple 60%, #f2f2f2 40%);
+        background: linear-gradient( to right, #bc5090 60%, #f2f2f2 40%);
         height: 25px;
 }
 
 #python, #django{
-    background: linear-gradient( to right, purple 60%, #f2f2f2 40%);
+    background: linear-gradient( to right, #bc5090 60%, #f2f2f2 40%);
     height: 25px;
 }
 
 #flask{
-    background: linear-gradient( to right, purple 50%, #f2f2f2 50%);
+    background: linear-gradient( to right, #bc5090 50%, #f2f2f2 50%);
     height: 25px;
 }
 
@@ -306,7 +318,7 @@ a{
 
 /**********************Footer Styles*/
 .footer{
-    background: purple;
+    background: #003f5c;
     background-attachment: fixed;
     bottom: 0;
     position: absolute;
@@ -365,7 +377,7 @@ a{
     }
 
     .navbar{
-        background: purple;
+        background: #003f5c;
         margin-bottom: 4rem;
     }
 
@@ -379,17 +391,18 @@ a{
     }
 
     .navbar-nav .nav-item .nav-link{
-        color: #b19f9e;
+        color: #ff6361;
         font-size: 18px;
         font-weight: 800;
         text-transform: uppercase;
     }
 
     .about-div{
+        background: #003f5c;
         border: 2px solid #17252a;
-        color: #17252a;
+        color: #f1f1f1;
         margin: 2rem auto;
-        width: 75%;
+        width: 80%;
     }
 
     .project-container{
@@ -399,8 +412,15 @@ a{
         width: 90%;
     }
 
+    .skills-container{
+        padding: 3rem 0;
+        margin: 0 auto;
+        width: 80%;
+    }
+
     .outer{
         display: inline-block;
+        margin-left: 1rem;
         width: 45%;
     }
 
@@ -426,8 +446,8 @@ a{
 
 @media screen and (min-width: 992px){
     .about-div{
-        font-size: 2rem;
-        width: 40%;
+        font-size: 2.5rem;
+        width: 60%;
     }
 
     .fab{
