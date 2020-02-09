@@ -248,19 +248,19 @@ a{
 }
 
 .outer{
-    border: 1px solid #58508d;
+    border: 2px solid #58508d;
     border-radius: 4px;
-    height: 40px;
+    height: 35px;
     width: 90%;
     margin: 5px auto;
-    padding: .5rem;
+    padding: .25rem
 }
 
 .skill-level{
-    border: 1px solid #58508d;
+    border: 2px solid #58508d;
     border-radius: 4px;
     color: #f2f2f2;
-    font-size: 25px;
+    font-size: 20px;
     font-variant: small-caps;
     font-weight: 600;
     line-height: 25px;
