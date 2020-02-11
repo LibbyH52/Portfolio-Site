@@ -55,7 +55,7 @@ h2{
 }
 
 h3{
-    color: #479761;
+    color: #bc5090;
     font-size: 1.5rem;
     font-family: 'Lobster', cursive;
     font-weight: bold;
@@ -64,8 +64,9 @@ h3{
 }
 
 h2.projects,
-h3.projects{
-    color: #003f5c;
+h3.projects,
+.skills-heading{
+    color: #bc5090;
     background: none;
     text-align: center;
 }
@@ -192,6 +193,7 @@ hr{
 
 #skills{
     background: #f1f1f1;
+    padding-bottom: 10rem;
 }
 
 .skills{
@@ -392,7 +394,7 @@ a{
     }
 
     .navbar-nav .nav-item .nav-link{
-        color: #ff6361;
+        color: #bc5090;
         font-size: 18px;
         font-weight: 800;
         text-transform: uppercase;
