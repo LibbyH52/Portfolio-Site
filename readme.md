@@ -1,5 +1,5 @@
 # Portfolio Website
-This is a temporary portfolio that is currently under further construction.
+Constantly being updated and improved.
 
 ## Acknowledgements
 
@@ -10,10 +10,10 @@ This is a temporary portfolio that is currently under further construction.
 
  My website colour scheme was found here [40. Modern and Minimalist](https://visme.co/blog/website-color-schemes/)
 
- I obtained the background image for my header from [pixabay](https://pixabay.com/illustrations/background-circuit-grey-digital-2426328/)
+ I obtained the background image for my header from [pixabay](https://pixabay.com/illustrations/binary-monitor-particles-blue-1414324/)
 
- I received some design inspiration from [here](http://seanhalpin.io/).
+ I received some design inspiration from [here](http://seanhalpin.io/) and [here](https://dean451.github.io/)].
 
  The colour for the bootstrap icon colour was found on [Bootstrap.com](https://getbootstrap.com/docs/4.0/utilities/colors/)
 
- I got the linkedin icon colour from [linkedin.com](https://brand.linkedin.com/en-us)
+ The code to collapse the Navbar once a user clicks on a link was found on [stackoverflow](https://stackoverflow.com/questions/16877429/twitter-bootstrap-mobile-nav-hide-menu-after-clicking-menu-link) and adapted to utilize ES6 instead of jQuery. 
