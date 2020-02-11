@@ -16,17 +16,17 @@ body{
 }
 
 .navbar{
-    background: purple;
+    background: #003f5c;
     margin-bottom: 4rem;
 }
 
 /*Code found on stack overflow. See readme for more info*/
 .navbar-toggler .navbar-toggler-icon{
-    color: #b19f9e;
+    color: #bc5090;
 }
 
 .navbar-nav .nav-item .nav-link{
-    color: #b19f9e;
+    color: #bc5090;
     font-size: 18px;
     font-weight: 800;
 }
@@ -130,7 +130,7 @@ hr{
 
 .about-div{
     background: #f1f1f1;
-    color: #19181a;
+    color: #003f5c;
     display: grid;
     grid-template-columns: 12fr;
     margin: 0 auto;
@@ -253,7 +253,7 @@ a{
     border: 2px solid #58508d;
     border-radius: 4px;
     height: 35px;
-    width: 90%;
+    width: 95%;
     margin: 5px auto;
     padding: .25rem
 }
@@ -405,7 +405,7 @@ a{
         border: 2px solid #17252a;
         color: #f1f1f1;
         margin: 2rem auto;
-        width: 80%;
+        width: 70%;
     }
 
     .project-container{
@@ -413,6 +413,10 @@ a{
         margin-right: auto;
         grid-template-columns: 6fr 6fr;
         width: 90%;
+    }
+
+    .project{
+        margin-top: 15px;
     }
 
     .skills-container{
@@ -450,7 +454,7 @@ a{
 @media screen and (min-width: 992px){
     .about-div{
         font-size: 2.5rem;
-        width: 60%;
+        width: 50%;
     }
 
     .fab{
