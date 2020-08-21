@@ -10,45 +10,27 @@ body{
     padding-bottom: 8rem;
 }
 
-/*****************Navigation Styles*/
-.navigation{
-    max-width: 100%;
-}
-
-.navbar{
-    background: #003f5c;
-    margin-bottom: 4rem;
-}
-
-/*Code found on stack overflow. See readme for more info*/
-.navbar-toggler .navbar-toggler-icon{
-    color: #bc5090;
-}
-
-.navbar-nav .nav-item .nav-link{
-    color: #bc5090;
-    font-size: 18px;
-    font-weight: 800;
-}
-
 /*******************Heading Styles*/
 .main-heading{
-    color: #bc5090;
-    font-family: 'Lobster', cursive;
-    font-size: 3.5rem;
-    font-variant: small-caps;
-    font-weight: 800;
-    line-height: 4.5rem;
-    -webkit-text-stroke: 2px #f1f1f1;
-    -moz-text-stroke: 2px #f1f1f1; 
-    -o-text-stroke: 2px #f1f1f1; 
-    -ms-text-stroke: 2px #f1f1f1;    
+    color: #7E685A; 
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-h2.main-heading{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.75rem;
+.name{
+    color: #E7717D;
+    font-weight: bold;
 }
+
+.header-btn{
+    background: #C2CAD0; 
+    border: 3px solid #E7717D;
+    color: #E7717D;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 2.5rem;
+}
+
 
 h2{
     font-family: 'Lobster', cursive;
@@ -81,18 +63,12 @@ h3.projects,
 /**********************Header Styles*/
 
 .header{
-    /* background: url(../img/mobile-devices.png); */
-    background: url(../img/binary.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
+    background: #C2CAD0;
+    display:flex;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
-    height: 100vh;
     justify-content: center;
-    max-width: 100%;
+    padding: 1rem;
 }
 
 .pic{
@@ -217,6 +193,7 @@ hr{
     padding: .2rem;
 }
 
+/********************************Button Styles*/
 .btn,
 .btn:hover,
 .btn:focus,
@@ -371,34 +348,21 @@ a{
 /*********************Media Queries*/
 
 @media screen and (min-width: 768px){
+    .header{
+        height: 90vh;
+        padding: 4rem;
+    }
+
     .main-heading{
-        font-size: 5.5rem;
-    }
-    
-    h2.main-heading{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
-    .navbar{
-        background: #003f5c;
-        margin-bottom: 4rem;
+    .header-btn{
+        font-size: 1.5rem;
+        font-weight: bold;
+        height: 2.5rem;
     }
 
-    .navbar-nav{
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .navbar-nav li{
-        width: 100%;
-    }
-
-    .navbar-nav .nav-item .nav-link{
-        color: #bc5090;
-        font-size: 18px;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
 
     .about-div{
         background: #003f5c;
@@ -452,6 +416,14 @@ a{
 }
 
 @media screen and (min-width: 992px){
+    .main-heading{
+        color: #7E685A; 
+        font-size: 3rem;
+    }
+
+    .header-btn{
+        height: 3rem;
+    }
     .about-div{
         font-size: 2.5rem;
         width: 50%;
