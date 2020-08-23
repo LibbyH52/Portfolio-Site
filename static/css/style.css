@@ -40,14 +40,8 @@ a:visited{
     text-decoration: none;
 }
 
-
-h2{
-    font-family: 'Lobster', cursive;
-}
-
 h3{
     font-size: 1.5rem;
-    font-family: 'Lobster', cursive;
     font-weight: bold;
     text-align: center;
 }
@@ -62,7 +56,7 @@ h3.projects,
 
 .about-heading{
     align-self: center;
-    color: #7E685A;
+    color: #c2cad0;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -71,6 +65,7 @@ h3.projects,
 
 .header{
     background: #C2CAD0;
+    background-attachment: fixed;
     display:flex;
     align-items: flex-start;
     flex-direction: column;
@@ -78,18 +73,6 @@ h3.projects,
     padding: 1rem;
 }
 
-/**.pic{
-    background: url(../img/coffee.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    display: flex;
-    margin: 5px auto 20px auto;
-    height: 200px;
-    justify-content: center;
-    width: 200px;    
-}
-*/
 /*********************Section Styles*/
 .container-fluid{
     background-attachment: fixed;
@@ -101,8 +84,8 @@ h3.projects,
 /*********************About Section*/
 
 #about{
-    background: #f1f1f1;
-    color: #7E685A;
+    background: #E7717D;
+    color: #c2cad0;
     padding: .25rem;
 }
 
@@ -115,18 +98,18 @@ h3.projects,
 }
 
 .details{
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
     font-size: 1.25rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 0 auto;
     max-width: 90%;
     padding: 2rem 1rem;
-    word-spacing: 4px;
+    word-spacing: 2px;
 }
 
 /*********************Project Section*/
 #projects{
-    background: #E7717D;
+    background: #C2CAD0;
 }
 
 .project-container{
