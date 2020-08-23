@@ -46,11 +46,9 @@ h2{
 }
 
 h3{
-    color: #bc5090;
     font-size: 1.5rem;
     font-family: 'Lobster', cursive;
     font-weight: bold;
-    padding: 1rem;
     text-align: center;
 }
 
@@ -64,7 +62,7 @@ h3.projects,
 
 .about-heading{
     align-self: center;
-    color: #f1f1f1;
+    color: #7E685A;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -80,18 +78,18 @@ h3.projects,
     padding: 1rem;
 }
 
-.pic{
+/**.pic{
     background: url(../img/coffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
     display: flex;
-    margin: 10px auto;
+    margin: 5px auto 20px auto;
     height: 200px;
     justify-content: center;
     width: 200px;    
 }
-
+*/
 /*********************Section Styles*/
 .container-fluid{
     background-attachment: fixed;
@@ -100,27 +98,20 @@ h3.projects,
     padding: 4rem 0;
 }
 
-hr{
-    background: #58508d;
-    border-width: 4px;
-    margin: 0 auto;
-    width: 90%;
-}
-
 /*********************About Section*/
 
 #about{
     background: #f1f1f1;
+    color: #7E685A;
+    padding: .25rem;
 }
 
 .about-div{
-    background: #f1f1f1;
-    color: #003f5c;
     display: grid;
     grid-template-columns: 12fr;
     margin: 0 auto;
     padding: 0;
-    width: 95%;
+    max-width: 100%;
 }
 
 .details{
@@ -135,7 +126,7 @@ hr{
 
 /*********************Project Section*/
 #projects{
-    background: #f2f2f2;
+    background: #E7717D;
 }
 
 .project-container{
@@ -374,11 +365,9 @@ a{
 
 
     .about-div{
-        background: #003f5c;
-        border: 2px solid #17252a;
-        color: #f1f1f1;
+        font-size: 1.5rem;
         margin: 2rem auto;
-        width: 70%;
+        width: 80%;
     }
 
     .project-container{
@@ -434,7 +423,8 @@ a{
     }
     .about-div{
         font-size: 2.5rem;
-        width: 50%;
+        line-height: 3rem;
+        width: 70%;
     }
 
     .fab{
