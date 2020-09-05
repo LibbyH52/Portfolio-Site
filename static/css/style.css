@@ -1,18 +1,16 @@
-html{
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
 body{
     background: #f1f1f1;
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
     position: relative;
-    min-height: 100vh;
     padding-bottom: 8rem;
+    scroll-behavior: smooth;
 }
 
 /*******************Heading Styles*/
 .main-heading{
-    color: #7E685A; 
+    color: #E7717D; 
     font-size: 2rem;
     font-weight: 700;
 }
@@ -64,21 +62,26 @@ h3.projects,
 /**********************Header Styles*/
 
 .header{
-    background: #C2CAD0;
+    background: url('../img/pen.jpg') center center;
     background-attachment: fixed;
+    background-size: cover;
     display:flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 /*********************Section Styles*/
 .container-fluid{
-    background-attachment: fixed;
-    width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 4rem 0;
+    width: 100vw;
 }
 
 /*********************About Section*/
@@ -113,28 +116,51 @@ h3.projects,
 }
 
 .project-container{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     padding-bottom: 6rem;
 }
 
 .project{
+    margin: 20px auto;
     position: relative;
-    height: 100%;
-    width: 100%;
+    max-width: 90%;
 }
 
 .img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 4px solid #f2f2f2;
     display: block;
-    width: 100%;
-    height: 250px;
-    margin: 0 auto;
+    height: 360px;
+    width: 360px;
+    max-width: 95%;
+} 
+
+.monkees-project{
+    background: url('../img/monkees.png') center center;
+}
+
+.cereal-project{
+    background: url('../img/cereal.png') center center;
+}
+
+.recipe-project{
+    background: url('../img/recipe.png') center center;
+}
+
+.unicorn-project{
+    background: url('../img/unicorn.png') center center;
 }
 
 .project-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background: rgba(0, 0, 60, 0.8);
     bottom: 0;
     right: 0;
@@ -151,7 +177,9 @@ h3.projects,
 }
 
 #skills{
-    background: #f1f1f1;
+    background: url('../img/desk.jpg') center center;
+    background-attachment: fixed;
+    background-size: cover;
     padding-bottom: 10rem;
 }
 
@@ -167,7 +195,7 @@ h3.projects,
 
 .skill{
     border: 1px solid #f2f2f2;
-    color: #f2f2f2;
+    color: #19181a;
     display: inline-block;
     font-size: 1.25rem;
     font-variant: small-caps;
@@ -354,14 +382,16 @@ a{
     }
 
     .project-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
-        grid-template-columns: 6fr 6fr;
         width: 90%;
     }
 
-    .project{
-        margin-top: 15px;
+    .project-btn{
+        display: inline-block;
     }
 
     .skills-container{
@@ -369,7 +399,7 @@ a{
         margin: 0 auto;
         width: 80%;
     }
-
+    
     .outer{
         display: inline-block;
         margin-left: 1rem;
@@ -398,7 +428,6 @@ a{
 
 @media screen and (min-width: 992px){
     .main-heading{
-        color: #7E685A; 
         font-size: 3rem;
     }
     .header-btn{
@@ -421,9 +450,7 @@ a{
 
 @media screen and (min-width: 1025px){
     .project-container{
-        grid-template-columns: 3fr 3fr 3fr 3fr;
         align-content: center;
         justify-content: center; 
-        width: 80%;
     }
 }
