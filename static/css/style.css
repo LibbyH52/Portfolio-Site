@@ -23,10 +23,13 @@ body{
 .header-btn{
     background: #C2CAD0; 
     border: 3px solid #E7717D;
+    border-radius: 5px;
     color: #E7717D;
     font-size: 1.5rem;
     font-weight: bold;
+    line-height: 2.5rem;
     height: 2.5rem;
+    padding: 0 1rem;
 }
 
 a,
@@ -69,7 +72,7 @@ h3.projects{
     background-attachment: fixed;
     background-size: cover;
     display:flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     height: 100%;
@@ -184,27 +187,6 @@ h3.projects{
     padding-bottom: 10rem;
 }
 
-.skills{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 65%;
-    padding: 2%;
-}
-
-.skill{
-    border: 1px solid #f2f2f2;
-    color: #19181a;
-    display: inline-block;
-    font-size: 1.25rem;
-    font-variant: small-caps;
-    font-weight: bolder;
-    margin: .25rem;
-    padding: .2rem;
-}
-
 /********************************Button Styles*/
 .btn,
 .btn:hover,
@@ -235,53 +217,6 @@ a{
 }
 
 /*************************Skills Section*/
-.skills-container{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.outer{
-    border: 2px solid #58508d;
-    border-radius: 4px;
-    height: 35px;
-    width: 95%;
-    margin: 5px auto;
-    padding: .25rem
-}
-
-.skill-level{
-    border: 2px solid #58508d;
-    border-radius: 4px;
-    color: #f2f2f2;
-    font-size: 20px;
-    font-variant: small-caps;
-    font-weight: 600;
-    line-height: 25px;
-    height: 25px;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-}
-
-#html, #css, #js{
-    background: linear-gradient( to right, #bc5090 70%, #f2f2f2 30%);
-    height: 25px;
-}
-
-#bootstrap{
-        background: linear-gradient( to right, #bc5090 60%, #f2f2f2 40%);
-        height: 25px;
-}
-
-#python, #django{
-    background: linear-gradient( to right, #bc5090 60%, #f2f2f2 40%);
-    height: 25px;
-}
-
-#flask{
-    background: linear-gradient( to right, #bc5090 50%, #f2f2f2 50%);
-    height: 25px;
-}
 
 /**************************Icon Styles*/
 
@@ -371,13 +306,6 @@ a{
         font-size: 2.5rem;
     }
 
-    .header-btn{
-        font-size: 1.5rem;
-        font-weight: bold;
-        height: 2.5rem;
-    }
-
-
     .about-div{
         font-size: 1.5rem;
         margin: 2rem auto;
@@ -395,18 +323,6 @@ a{
 
     .project-btn{
         display: inline-block;
-    }
-
-    .skills-container{
-        padding: 3rem 0;
-        margin: 0 auto;
-        width: 80%;
-    }
-    
-    .outer{
-        display: inline-block;
-        margin-left: 1rem;
-        width: 45%;
     }
 
     .footer .contact{
@@ -433,9 +349,12 @@ a{
     .main-heading{
         font-size: 3rem;
     }
+
     .header-btn{
         height: 3rem;
+        line-height: 3rem;
     }
+
     .about-div{
         font-size: 2.5rem;
         line-height: 3rem;
