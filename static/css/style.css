@@ -33,9 +33,14 @@ a,
 a:hover,
 a:active,
 a:visited{
-    color: #E7717D;
+    color: #7E685A;
     scroll-behavior: smooth;
     text-decoration: none;
+}
+
+h2.projects{
+    font-size: 2.5rem;
+    font-weight: bold; 
 }
 
 h3{
@@ -45,10 +50,8 @@ h3{
 }
 
 h2.projects,
-h3.projects,
-.skills-heading{
-    color: #bc5090;
-    background: none;
+h3.projects{
+    color: #E7717D;
     text-align: center;
 }
 
@@ -101,7 +104,6 @@ h3.projects,
 }
 
 .details{
-    /* font-family: 'Lobster', cursive; */
     font-size: 1.25rem;
     letter-spacing: 1px;
     margin: 0 auto;
@@ -120,12 +122,12 @@ h3.projects,
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 90%;
     padding-bottom: 6rem;
 }
 
 .project{
-    margin: 20px auto;
+    margin: 5px;
     position: relative;
     max-width: 90%;
 }
@@ -161,7 +163,7 @@ h3.projects,
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: rgba(0, 0, 60, 0.8);
+    background: #7E655A;
     bottom: 0;
     right: 0;
     opacity: 0;
@@ -174,6 +176,8 @@ h3.projects,
 
 .project:hover .project-details{
     opacity: 1;
+    animation: fadeIn;
+    animation-duration: 1s;
 }
 
 #skills{
@@ -209,7 +213,7 @@ h3.projects,
 .btn:hover,
 .btn:focus,
 .btn:active{
-    color: #f2f1f1;
+    border-radius: 10px;
     display: block;
     font-size: 20px;
     padding: 5px;
@@ -224,11 +228,13 @@ a{
 }
 
 .btn-code{
-    background-color: #479761;
+    background-color: #E7717D;
+    border: 5px solid #7E685A;
 }
 
 .btn-live{
-    background-color: #19181a;
+    background-color: #AFD275;
+    border: 5px solid #7E685A;;
 }
 
 /*************************Skills Section*/
