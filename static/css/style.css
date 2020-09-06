@@ -1,5 +1,7 @@
 body{
     background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     min-height: 100%;
     overflow-x: hidden;
@@ -12,7 +14,9 @@ body{
 .main-heading{
     color: #E7717D; 
     font-size: 2rem;
-    font-weight: 700;
+    font-variant: small-caps;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #E7717D;
 }
 
 .name{
@@ -180,6 +184,15 @@ h3.projects{
     animation-duration: 1s;
 }
 
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.25rem;
+    padding: 1.5rem;
+}
+
 #skills{
     background: url('../img/desk.jpg') center center;
     background-attachment: fixed;
@@ -216,72 +229,20 @@ a{
     border: 5px solid #7E685A;;
 }
 
-/*************************Skills Section*/
-
-/**************************Icon Styles*/
-
-.fab{
-    display: inline;
-    font-size: 4rem;
-}
-
-.bootstrap{
-    color: #563d7c;
-}
-
-.css{
-    color: #1f76c2;
-}
-
-.html{
-    color: #e34f26;
-}
-
-.javascript{
-    color: #f7df1e;
-}
-
-.python{
-    color: #4584b6;
-}
-
-/**********************Footer Styles*/
-.footer{
-    background: #003f5c;
+/*******************Contact Container*/
+.contact-container{
+    background: #AFD275;
     background-attachment: fixed;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    min-height: 5rem;
-    padding: 0;
+    background-size: cover;
+    padding: 4rem;
 }
 
-.copyright{
-    color: #f1f1f1;
-    font-size: 2rem;
-    text-align: center;
-    width: 100%;
-}
-
-.footer .contact-details{
-    color: #f1f1f1;
-    float: right;
-    font-size: 1.5rem;
-    font-weight: bold;
-    bottom: 0;
-    margin: 0;
-    padding: 2rem;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-.footer .contact-details .contact-text{
+.contact-details .contact-text{
     font-size: 2rem;
     font-weight: normal;
 }
 
-.footer .fab{
+.fab{
     font-size: 4rem;
     margin-right: 1rem;
 }
@@ -292,6 +253,23 @@ a{
 
 .fa-github{
     color: #ffffff;
+}
+/**********************Footer Styles*/
+.footer{
+    background: #003f5c;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    margin-top: -100px;
+    padding: 0;
+}
+
+.copyright{
+    color: #f1f1f1;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
 }
 
 /*********************Media Queries*/
@@ -347,7 +325,7 @@ a{
 
 @media screen and (min-width: 992px){
     .main-heading{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .header-btn{
