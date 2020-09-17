@@ -44,6 +44,13 @@ a:visited{
     text-decoration: none;
 }
 
+h2.skills{
+    color: #E7717D;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
 h2.projects{
     font-size: 2.5rem;
     font-weight: bold; 
@@ -201,6 +208,7 @@ h3.projects{
 
 .skill{
     background: #C2CAD0;
+    opacity: 0.90;
     border-radius: 10px;
     font-size: 6rem;
     margin: 0.25rem;
