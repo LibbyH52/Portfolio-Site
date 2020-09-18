@@ -71,8 +71,6 @@ h3.projects{
 .about-heading{
     align-self: center;
     color: #c2cad0;
-    font-size: 2rem;
-    font-weight: 900;
 }
 
 /**********************Header Styles*/
@@ -98,27 +96,32 @@ h3.projects{
 }
 
 /*********************About Section*/
-
 #about{
     background: #E7717D;
-    color: #c2cad0;
-    padding: .25rem;
+    padding: 1rem 0;
 }
 
 .about-div{
     display: grid;
-    grid-template-columns: 12fr;
     margin: 0 auto;
-    padding: 0;
-    max-width: 100%;
+    width: 80%;
+}
+
+.picture{
+    background: url('../img/coffee.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .details{
-    font-size: 1.25rem;
+    color: #7E685A;
     letter-spacing: 1px;
     margin: 0 auto;
-    max-width: 90%;
-    padding: 2rem 1rem;
+    font-size: 1.25rem;
     word-spacing: 2px;
 }
 
@@ -300,9 +303,16 @@ a{
     }
 
     .about-div{
-        font-size: 1.5rem;
-        margin: 2rem auto;
+        margin: 0 auto;
         width: 80%;
+    }
+    
+    .picture{
+        margin: 10px auto;
+    }
+    
+    .details{
+        width: 400px;
     }
 
     .project-container{
@@ -335,12 +345,22 @@ a{
         line-height: 3rem;
     }
 
+
     .about-div{
-        font-size: 2.5rem;
-        line-height: 3rem;
-        width: 70%;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
     }
 
+    .picture{
+        border-radius: 50px;
+        height: 360px;
+        width: 360px;
+    }
+
+    .details{
+        margin: 0;
+    }
+   
     .fab{
         font-size: 6rem;
     }
