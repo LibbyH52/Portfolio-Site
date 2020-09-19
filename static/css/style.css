@@ -200,7 +200,9 @@ h3.projects{
     flex-wrap: wrap;
     justify-content: center;
     font-size: 1.25rem;
+    margin: 0 auto;
     padding: 1.5rem;
+    width: 85%;
 }
 
 #skills{
@@ -211,11 +213,12 @@ h3.projects{
 
 .skill{
     background: #C2CAD0;
-    opacity: 0.90;
+    background: #f3f3f3;
     border-radius: 10px;
     font-size: 6rem;
+    font-weight: bolder;
     margin: 0.25rem;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
 }
 
 /********************************Button Styles*/
