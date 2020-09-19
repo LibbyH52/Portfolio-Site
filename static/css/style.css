@@ -221,6 +221,11 @@ h3.projects{
     padding: 1rem 2rem;
 }
 
+.skill:hover{
+    animation: pulse;
+    animation-duration: 1.5s;
+}
+
 /********************************Button Styles*/
 .btn,
 .btn:hover,
