@@ -70,7 +70,6 @@ h3.projects{
 
 .about-heading{
     align-self: center;
-    color: #c2cad0;
 }
 
 /**********************Header Styles*/
@@ -98,6 +97,8 @@ h3.projects{
 /*********************About Section*/
 #about{
     background: #E7717D;
+    color: #C2CAD0;
+    font-family: 'Montserrat', sans-serif;
     padding: 1rem 0;
 }
 
@@ -118,7 +119,6 @@ h3.projects{
 }
 
 .details{
-    color: #7E685A;
     letter-spacing: 1px;
     margin: 0 auto;
     font-size: 1.25rem;
@@ -338,7 +338,7 @@ a{
 
 
     .about-div{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 5fr 7fr;
         margin: 0 auto;
     }
 
@@ -350,6 +350,7 @@ a{
 
     .details{
         margin: 0;
+        width: 90%;
     }
 
     .copyright{
