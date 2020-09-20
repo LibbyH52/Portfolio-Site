@@ -4,7 +4,6 @@ body{
     flex-direction: column;
     height: 100%;
     overflow-x: hidden;
-    padding-bottom: 200px;
     position: relative;
     scroll-behavior: smooth;
 }
@@ -255,38 +254,30 @@ a{
     border: 5px solid #7E685A;;
 }
 
-.fab{
-    font-size: 3rem;
-    margin-right: 1rem;
-}
-
-.fa-linkedin{
-    color: black;
-}
-
-.fa-github{
-    color: black;
-}
 /**********************Footer Styles*/
 .footer{
+    background: url('../img/pen.jpg') center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
     width: 100%;
-    height: 200px;
+    height: 150px;
 }
 
-.contact-details {
-    font-size: 2rem;
-    font-weight: normal;
+.redesign{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.copyright{
-    color: #f1f1f1;
-    font-size: 2rem;
-    text-align: center;
-    width: 100%;
+.icon{
+    font-size: 3rem;
+    margin: 1rem;
 }
 
 /*********************Media Queries*/
