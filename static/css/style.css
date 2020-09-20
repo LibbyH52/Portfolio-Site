@@ -1,3 +1,9 @@
+html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background: #f1f1f1;
     display: flex;
@@ -5,7 +11,46 @@ body{
     height: 100%;
     overflow-x: hidden;
     position: relative;
+    margin: 0;
     scroll-behavior: smooth;
+}
+
+/*****************Navigation Styles*/
+nav.navigation{
+    background: #7e685a;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1;
+}
+
+li{
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    list-style:none;
+    margin: 0 2rem;
+    padding: 0 2rem;
+}
+
+a,
+a:hover,
+a:active,
+a:visited{
+    color: #E7717D;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+li:hover{
+    transform: scale(1.5);
+}
+
+.icon{
+    font-size: 1rem;
 }
 
 /*******************Heading Styles*/
@@ -32,15 +77,6 @@ body{
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 1rem;
-}
-
-a,
-a:hover,
-a:active,
-a:visited{
-    color: #7E685A;
-    scroll-behavior: smooth;
-    text-decoration: none;
 }
 
 h2.skills{
@@ -88,9 +124,9 @@ h3.projects{
 /*********************Section Styles*/
 .container-fluid{
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 4rem 0;
-    width: 100vw;
+    width: 100%;
 }
 
 /*********************About Section*/
@@ -98,7 +134,7 @@ h3.projects{
     background: #E7717D;
     color: #C2CAD0;
     font-family: 'Montserrat', sans-serif;
-    padding: 1rem 0;
+    padding: 4rem 0 1rem;
 }
 
 .about-div{
@@ -137,6 +173,7 @@ h3.projects{
     margin: 0 auto;
     max-width: 90%;
     padding-bottom: 6rem;
+    position: relative;
 }
 
 .project{
