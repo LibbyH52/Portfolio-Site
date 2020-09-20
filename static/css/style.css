@@ -27,11 +27,30 @@ nav.navigation{
     z-index: 1;
 }
 
+.nav-icon-bars{
+    float: right;
+    margin-right: 1rem;
+}
+
+#icon-bars{
+    color:#E7717D;
+    font-size: 2rem;
+    margin-right: 0;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
 li{
     font-size: 1.5rem;
     line-height: 2rem;
     list-style:none;
-    margin: 0 2rem;
+    margin: 0 auto;
     padding: 0 2rem;
 }
 
@@ -324,9 +343,22 @@ a{
         padding: 4rem;
     }
 
-    li{
-        display: inline-block;
+    #icon-bars{
+        display: none;
     }
+
+    .nav-menu{
+        display: block;
+    }
+     ul{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+
+     li{
+         display: inline-block;
+     }
 
     .main-heading{
         font-size: 2.5rem;
