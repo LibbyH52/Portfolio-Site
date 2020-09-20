@@ -63,10 +63,6 @@ a:visited{
     text-decoration: none;
 }
 
-li:hover{
-    transform: scale(1.5);
-}
-
 .icon{
     font-size: 1rem;
 }
@@ -276,7 +272,7 @@ h3.projects{
 }
 
 .skill:hover{
-    animation: pulse;
+    animation: heartBeat;
     animation-duration: 1.5s;
 }
 
@@ -349,15 +345,20 @@ a{
 
     .nav-menu{
         display: block;
+        float: right;
     }
-     ul{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-evenly;
-     }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 2rem;
+    }
 
      li{
          display: inline-block;
+         font-size: 1.75rem;
+         margin: 0 1rem;
      }
 
     .main-heading{
