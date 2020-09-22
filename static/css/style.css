@@ -19,6 +19,9 @@ body{
 
 /*****************Navigation Styles*/
 nav.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     opacity: 0.8;
     width: 100%;
     padding: 0;
@@ -29,9 +32,21 @@ nav.navigation{
     z-index: 1;
 }
 
+div.nav-logo a{
+    color: #AC3B61;
+    display: inline-block;
+    padding: .5rem;
+    font-size: 2rem;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+}
+
 .nav-icon-bars{
     float: right;
     margin-right: 1rem;
+    animation: fadeInRight;
+    animation-duration: 3s;
+    padding: .5rem;
 }
 
 #icon-bars{
@@ -83,7 +98,6 @@ a:visited{
 .name{
     color: #AC3B61;
     font-weight: bold;
-    -webkit-text-stroke: none;
 }
 
 h2.skills{
@@ -123,11 +137,13 @@ h3.projects{
 
 /**********************Header Styles*/
 .header{
-    height: 90vh;
+    height: 100vh;
+    min-height: 100%;
     background: #123C69;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 1rem;
 }
 
 /*********************Section Styles*/
@@ -333,24 +349,9 @@ a.btn-live{
 /*********************Media Queries*/
 
 @media screen and (min-width: 768px){
-    #icon-bars{
-        display: none;
-    }
-
-    .nav-menu{
-        display: block;
-    }
-
-    ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 0 2rem;
-    }
-
-     li{
+    li{
          display: inline-block;
-         font-size: 1.75rem;
+         font-size: 1.5rem;
          opacity: 1;
          margin: 0 1rem;
      }
@@ -359,9 +360,10 @@ a.btn-live{
         font-size: 3.5rem;
         letter-spacing: 3px;
         word-spacing: 5px;
-        padding-left: 3rem;
         font-variant: small-caps;
         opacity: 1;
+        animation: fadeInLeft;
+        animation-duration: 2s;
     }
 
     .name{
@@ -374,10 +376,14 @@ a.btn-live{
     }
     
     .picture{
+        animation: fadeInRight;
+        animation-duration: 2s;
         margin: 10px auto;
     }
     
     .details{
+        animation: fadeInLeft;
+        animation-duration: 2s;
         width: 90%;
     }
 
@@ -402,6 +408,20 @@ a.btn-live{
 }
 
 @media screen and (min-width: 992px){
+    .header{
+        padding-left: 2rem;
+    }
+
+    .main-heading{
+        font-size: 4rem;
+    }
+
+    li{
+        font-size: 1.75rem;
+        opacity: 1;
+        margin: 0 1rem;
+    }
+
     .about-div{
         grid-template-columns: 5fr 7fr;
         margin: 0 auto;
