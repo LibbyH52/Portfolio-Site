@@ -202,7 +202,7 @@ h3.projects{
 }
 
 .project{
-    margin: 5px;
+    margin: 5px auto;
     position: relative;
     max-width: 90%;
 }
@@ -350,7 +350,7 @@ a.btn-live{
 
 @media screen and (min-width: 768px){
     li{
-         display: inline-block;
+         display: inline-block; 
          font-size: 1.5rem;
          opacity: 1;
          margin: 0 1rem;
