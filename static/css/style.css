@@ -224,6 +224,11 @@ h3.projects{
 
 .cereal-project{
     background: url('../img/cereal.png') center center;
+    background-size: cover;
+}
+
+.hangman-project{
+    background: url('../img/hangman.png') center center;
 }
 
 .recipe-project{
@@ -322,10 +327,7 @@ a.btn-live{
 
 /**********************Footer Styles*/
 .footer{
-    background: url('../img/pen.jpg') center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #123c69;
     bottom: 0;
     left: 0;
     position: absolute;
@@ -334,16 +336,20 @@ a.btn-live{
     height: 150px;
 }
 
-.redesign{
+.footer-div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.icon{
+.footer-div .nav-logo a{
     font-size: 3rem;
-    margin: 1rem;
+}
+
+.icon-link{
+    font-size: 3rem;
+    margin: .5rem 1rem;
 }
 
 /*********************Media Queries*/
