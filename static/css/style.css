@@ -182,7 +182,7 @@ h3.projects{
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 90%;
-    padding-bottom: 6rem;
+    padding-bottom: 200px;
     position: relative;
 }
 
@@ -269,6 +269,11 @@ h3.projects{
     padding: .5rem;
 }
 
+.python-svg{
+    height: 3rem;
+    width: 3rem;
+}
+
 /********************************Button Styles*/
 .btn,
 .btn:hover,
@@ -314,6 +319,7 @@ a.btn-live{
 }
 
 .footer-div{
+    color: #C5C6C7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,13 +330,16 @@ a.btn-live{
     padding: 1rem 0;
 }
 
-.icon-link{
+.footer-paragraph a.icon-link{
+    color: #C5C6C7;
     font-size: 3rem;
     margin: .5rem 1rem;
 }
 
 hr{
-    background: black;
+    background: #c5c6c7;
+    border: #C5C6C7;
+    border-radius: 50px;
     height: 3px;
     width: 60%;
     margin: 0 auto;
