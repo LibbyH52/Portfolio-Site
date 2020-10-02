@@ -258,8 +258,6 @@ h3.projects{
 
 #skills{
     background: #1f2833;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .skill{
@@ -267,13 +265,8 @@ h3.projects{
     border-radius: 10px;
     font-size: 6rem;
     font-weight: bolder;
-    margin: .25rem;
+    margin: .5rem;
     padding: .5rem;
-}
-
-.skill:hover{
-    animation: heartBeat;
-    animation-duration: 1.5s;
 }
 
 /********************************Button Styles*/
