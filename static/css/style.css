@@ -35,6 +35,7 @@ body{
 
 .main-heading{
     color: #66FCF1;
+    text-align: center;
 }
 
 .name{
@@ -252,7 +253,7 @@ h3.projects{
     font-size: 1.25rem;
     margin: 0 auto;
     padding: 1.5rem;
-    width: 85%;
+    width: 70%;
 }
 
 #skills{
@@ -266,8 +267,8 @@ h3.projects{
     border-radius: 10px;
     font-size: 6rem;
     font-weight: bolder;
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: .25rem;
+    padding: .5rem;
 }
 
 .skill:hover{
@@ -349,19 +350,28 @@ hr{
 /*********************Media Queries*/
 
 @media screen and (min-width: 768px){
+    nav.navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        z-index: 1;
+    }
+
     .nav-icon-bars{
         display: none;
     }
 
     .nav-menu{
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
     }
 
     .nav-link a{
         color: #45a29e;
         font-size: 1.5rem;
         margin-bottom: 2rem;
-        margin-left: 2rem;
     }
 
     .nav-link:hover{
@@ -427,7 +437,9 @@ hr{
 }
 
 @media screen and (min-width: 992px){
-
+    nav.navigation{
+        width: 70%;
+    }
 
     .about-div{
         grid-template-columns: 5fr 7fr;
