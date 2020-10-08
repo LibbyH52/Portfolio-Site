@@ -89,7 +89,7 @@ a,
 a:hover,
 a:active,
 a:visited{
-    color: #45a29e;
+    /* color: #45a29e; */
     scroll-behavior: smooth;
     text-decoration: none;
 }
@@ -187,7 +187,7 @@ h3.projects{
 }
 
 .project{
-    margin: 3px auto;
+    margin: 5px auto;
     position: relative;
     max-width: 90%;
 }
@@ -338,6 +338,10 @@ a.btn-live{
     margin: .5rem 1rem;
 }
 
+a.icon-link:hover{
+    color: #45a29e;
+}
+
 hr{
     background: #c5c6c7;
     border: #C5C6C7;
@@ -378,8 +382,10 @@ hr{
         margin-bottom: 2rem;
     }
 
-    .nav-link:hover{
-        transform: scale(1.5);
+    .nav-link a:hover{
+        color: #66FCF1;
+        font-weight: bolder;
+        width: 100%;
     }
 
     li{
