@@ -44,19 +44,19 @@ body{
 }
 
 .top-heading{
-    animation: fromTop .75s ease-in-out, opacityLevel .75s ease-in-out;
+    animation: fromLeft .75s ease-in-out, opacityLevel .75s ease-in-out;
 }
 
 .name{
     color: #C5C6C7;
     font-weight: bold;
-    animation: fromLeft .75s ease-in-out, opacityLevel .75s ease-in-out;
+    animation: fromRight 1s ease-in-out, opacityLevel 1s ease-in-out;
 }
 
 .heading-info{
     font-size: 1rem;
     margin: 0 auto;
-    animation: fromBottom .75s ease-in-out, opacityLevel .75s ease-in-out;
+    animation: fromLeft .75s ease-in-out, opacityLevel .75s ease-in-out;
 }
 
 /*****************Navigation Styles*/
@@ -106,56 +106,45 @@ a:visited{
 }
 
 /*************Keyframes for Animations*/
-@keyframes fromTop{
-    0%{
-        transform: translateY(-200px);
-      }
-    40%{
-        transform: translateY(-100px);
-    }
-    90%{
-        transform: translateY(-50px);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
 @keyframes fromLeft{
    0%{
-        transform: translateX(200px);
+        transform: translateX(-150px);
       }
     40%{
-        transform: translateX(100px);
+        transform: translateX(-75px);
     }
     80%{
-        transform: translateX(50px);   
+        transform: translateX(-20px);   
     }
     100%{
         transform: translate(0);
     }
 }
-@keyframes fromBottom{
+@keyframes fromRight{
     0%{
-        transform: translateY(200px);
+        transform: translateX(150px);
     }
     40%{
-        transform: translateY(100px);
+        transform: translateX(100px);
     }
     90%{
-        transform: translateY(50px);
+        transform: translateX(-20px);
     }
     100%{
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 @keyframes opacityLevel{
     0%{
         opacity: 0;
         }
-    40%{
+    25%{
         opacity: 0.25;
     }
-    90%{
+    50%{
+        opacity: 0.5;
+    }
+    755{
         opacity: 0.75;
     }
     100%{   
