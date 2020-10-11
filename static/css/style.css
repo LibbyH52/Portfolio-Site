@@ -23,7 +23,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 95vh;
 }
 
 .header-container{
@@ -38,13 +38,25 @@ body{
     text-align: center;
 }
 
+
+.main-heading span{
+    display: block;
+}
+
+.top-heading{
+    animation: fromTop .75s ease-in-out, opacityLevel .75s ease-in-out;
+}
+
 .name{
     color: #C5C6C7;
     font-weight: bold;
+    animation: fromLeft .75s ease-in-out, opacityLevel .75s ease-in-out;
 }
 
 .heading-info{
     font-size: 1rem;
+    margin: 0 auto;
+    animation: fromBottom .75s ease-in-out, opacityLevel .75s ease-in-out;
 }
 
 /*****************Navigation Styles*/
@@ -89,9 +101,66 @@ a,
 a:hover,
 a:active,
 a:visited{
-    /* color: #45a29e; */
     scroll-behavior: smooth;
     text-decoration: none;
+}
+
+/*************Keyframes for Animations*/
+@keyframes fromTop{
+    0%{
+        transform: translateY(-200px);
+      }
+    40%{
+        transform: translateY(-100px);
+    }
+    90%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes fromLeft{
+   0%{
+        transform: translateX(200px);
+      }
+    40%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(50px);   
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes fromBottom{
+    0%{
+        transform: translateY(200px);
+    }
+    40%{
+        transform: translateY(100px);
+    }
+    90%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes opacityLevel{
+    0%{
+        opacity: 0;
+        }
+    40%{
+        opacity: 0.25;
+    }
+    90%{
+        opacity: 0.75;
+    }
+    100%{   
+        opacity: 1;
+    }
 }
 
 
@@ -401,8 +470,6 @@ hr{
         word-spacing: 5px;
         font-variant: small-caps;
         opacity: 1;
-        animation: fadeInLeft;
-        animation-duration: 2s;
         text-align: center;
     }
 
