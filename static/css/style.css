@@ -5,8 +5,7 @@ html{
 }
 
 body{
-    background-attachment: fixed;
-    background-size: cover;
+    background: #CFC6C7;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -205,7 +204,6 @@ h3.projects{
 
 /*********************About Section*/
 #about{
-    background: #CFC6C7;
     color: #1f2833;
     font-family: 'Montserrat', sans-serif;
     padding: 4rem 0 1rem;
@@ -236,10 +234,6 @@ h3.projects{
 }
 
 /*********************Project Section*/
-#projects{
-    background: #CFC6C7;
-}
-
 .project-container{
     display: flex;
     flex-direction: row;
@@ -448,8 +442,7 @@ hr{
     }
 
     .nav-link a:hover{
-        color: #66FCF1;
-        transform: translateY(-5px);
+        color: #C5C6C7;
         font-weight: bolder;
         width: 100%;
     }
