@@ -5,7 +5,6 @@ html{
 }
 
 body{
-    background: #CFC6C7;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -160,7 +159,7 @@ a:visited{
 
 
 
-h2.skills{
+h2.skills-heading{
     color: #BAB2B5;
     font-size: 2.5rem;
     font-weight: bolder;
@@ -203,10 +202,11 @@ h3.projects{
 }
 
 /*********************About Section*/
-#about{
+.about-container{
+    background: #CFC6C7;
     color: #1f2833;
     font-family: 'Montserrat', sans-serif;
-    padding: 4rem 0 1rem;
+    padding: 4rem 0;
 }
 
 .about-div{
@@ -234,7 +234,7 @@ h3.projects{
 }
 
 /*********************Project Section*/
-.project-container{
+.project-div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -305,7 +305,7 @@ h3.projects{
     animation-duration: 1s;
 }
 
-.skills-container{
+.skills-div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -316,7 +316,7 @@ h3.projects{
     width: 70%;
 }
 
-#skills{
+.skills-container{
     background: #1f2833;
 }
 
@@ -463,6 +463,11 @@ hr{
         text-align: center;
     }
 
+    .header{
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+        height: 100vh;
+    }
+
     .name{
         font-size: 4rem;
         font-variant: small-caps;
@@ -470,6 +475,11 @@ hr{
 
     .heading-info{
         font-size: 2rem;
+    }
+
+    .about-container{
+        padding: 12rem 0;
+        margin-top: -16vh;
     }
 
     .about-div{
@@ -489,7 +499,28 @@ hr{
         width: 90%;
     }
 
+    .skills-container{
+        background-image: linear-gradient(to bottom right,
+                        rgba(11, 12, 16, 0.8),  
+                        rgba(31, 40, 51, 0.8)), 
+                        url('../img/pen.jpg');
+        margin-top: -5rem;
+        padding: 10rem 0;
+        transform: skewY(-5deg);
+    }
+
+    .skills-heading,
+    .skills-div{
+        transform: skewY(5deg);
+    }
+    
     .project-container{
+        background: #CFC6C7;
+        padding: 16rem 0 6rem;
+        margin-top: -8rem;
+    }
+
+    .project-div{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -526,7 +557,7 @@ hr{
 }
 
 @media screen and (min-width: 1025px){
-    .project-container{
+    .project-div{
         align-content: center;
         justify-content: center; 
         width: 75%;
