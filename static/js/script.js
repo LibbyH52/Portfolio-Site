@@ -1,8 +1,7 @@
 /*jslint browser */
 /*ES6*/
-
-const navigate = document.querySelector('ul');
-const bars = document.querySelector('#icon-bars');
+const navigate = document.querySelector('.nav-menu');
+const bars = document.querySelector('.btn-icon-bars');
 const links = document.querySelectorAll('.nav-link');
 
 bars.addEventListener('click', (e) => {
