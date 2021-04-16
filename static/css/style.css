@@ -374,7 +374,7 @@ h3.projects{
 }
 
 /********************************Button Styles*/
-.btn,
+/* .btn,
 .btn:hover,
 .btn:focus,
 .btn:active{
@@ -387,7 +387,7 @@ h3.projects{
     margin-right: auto;
     margin-bottom: 0.5rem;
     cursor: pointer;
-}
+} */
 
 a{
     text-decoration: none;
