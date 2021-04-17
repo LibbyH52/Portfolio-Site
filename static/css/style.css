@@ -118,6 +118,8 @@ nav.navigation{
     color: #45a29e;
     position: fixed;
     top: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
     background: radial-gradient(#1F2833, #0B0C10);
     z-index: 1;
@@ -125,17 +127,22 @@ nav.navigation{
 
 .nav-menu{
     list-style: none;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav-icon{
+    display: block;
 }
 
 .nav-link a{
     color: #66FCF1;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-variant: small-caps;
+    margin: 1.5rem auto;
 }
 
 .hidden{
@@ -374,21 +381,6 @@ h3.projects{
 }
 
 /********************************Button Styles*/
-/* .btn,
-.btn:hover,
-.btn:focus,
-.btn:active{
-    border-radius: 10px;
-    display: block;
-    font-size: 20px;
-    padding: 5px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-} */
-
 a{
     text-decoration: none;
 }
@@ -453,22 +445,17 @@ hr{
 }
 
 /*********************Media Queries*/
+@media screen and (min-width: 420px){
+    .nav-icon{
+        display: inline-block;
+    }
+}
 
 @media screen and (min-width: 768px){
-    .nav-menu{
-        height: 70vh;
-    }
-
     .nav-link a{
         font-size: 2rem;
         padding: 1rem 3rem;
         transition: all .3s ease-in;
-    }
-
-    .nav-link a:hover{
-        background: #66FCF1;
-        color: #1F2833;
-        font-weight: bolder;
     }
 
     .main-heading{
@@ -540,10 +527,28 @@ hr{
 }
 
 @media screen and (min-width: 992px){
-    /* nav.navigation{
-        width: 70%;
-    } */
+    /*Inspiration and code for the hover effect was taken from section 5 of the  [Udemy course Advanced CSS and Sass: Flexbox, Grid, Animations and More! Link in to course in README*/
 
+    .nav-link,
+    .nav-link a,
+    .nav-link:link,
+    .nav-link:visited{
+        background-image: linear-gradient(120deg, 
+                                        transparent 0%,
+                                        transparent 50%,
+                                        #66FCF1 50%
+                                    );
+        background-size: 220%;
+        padding: 1rem 2rem;
+        transition: all .5s ease-in-out;
+        margin: 3rem auto;
+    }
+
+    .nav-link a:hover{
+        background-position: 90%;
+        color: #1F2833;
+    }
+    
     .about-div{
         grid-template-columns: 5fr 7fr;
         margin: 0 auto;
@@ -562,6 +567,10 @@ hr{
 }
 
 @media screen and (min-width: 1025px){
+    .nav-link a{
+        font-size: 3rem;
+    }
+
     .project-div{
         align-content: center;
         justify-content: center; 
