@@ -71,7 +71,9 @@ body{
 }
 
 .btn.heading-btn,
-.btn.heading-btn:link{
+.btn.heading-btn:link,
+.btn.heading-btn:active,
+.btn.heading-btn:visited{
     display: inline-block;
     border: 5px solid #66FCF1;
     color: #66FCF1;
@@ -83,10 +85,12 @@ body{
     margin-top: 2rem;
     box-shadow: 3px 3px 4px #777;
     cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 
 .btn.heading-btn:hover{
     box-shadow: 5px 5px 8px rgba(102, 252, 241,.5);
+    transform: translateY(-5px);
 }
 
 /*****************Navigation Styles*/
