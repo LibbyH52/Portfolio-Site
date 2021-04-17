@@ -111,7 +111,7 @@ body{
 }
 
 nav.navigation{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -143,10 +143,6 @@ nav.navigation{
     font-size: 1.5rem;
     font-variant: small-caps;
     margin: 1.5rem auto;
-}
-
-.hidden{
-    display: none;
 }
 
 a,
