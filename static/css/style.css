@@ -98,7 +98,7 @@ body{
     top: 0;
     right: 0;
     position: fixed;
-    padding: 1rem;
+    padding: .5rem;
     z-index: 6;
 } 
 
@@ -108,10 +108,17 @@ body{
     width: 4rem;
     border-radius: 50%;
     font-size: 2rem;
+    color: #f1f1f1;
+    background: #0b0c10;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(48, 48, 64, .6);
+    transition: all .5s;
+    cursor: pointer;
 }
 
 .btn.btn-icon-bars:hover{
-    cursor: pointer;
+    box-shadow: 6px 6px 6px 6px rgba(48, 48, 64, .6);
+    transform: scale(1.05) translateX(-3px);
 }
 
 nav.navigation{
@@ -143,10 +150,11 @@ nav.navigation{
 }
 
 .nav-link a{
+    display: inline-block;
     color: #66FCF1;
     font-size: 1.5rem;
     font-variant: small-caps;
-    margin: 1.5rem auto;
+    margin: .5rem auto;
 }
 
 a,
@@ -239,6 +247,18 @@ h3.projects{
 
 .about-heading{
     align-self: center;
+}
+
+.ed-link {
+    color: rgb(31, 40, 51, .7);
+    font-weight: 200;
+    vertical-align: top;
+    font-size: 1.3rem;
+}
+
+.ed-link:hover{
+    color: #45a29e;
+    font-weight: 400;
 }
 
 /*********************Section Styles*/
@@ -454,7 +474,7 @@ hr{
 @media screen and (min-width: 768px){
     .nav-link a{
         font-size: 2rem;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         transition: all .3s ease-in;
     }
 
@@ -538,10 +558,9 @@ hr{
                                         transparent 50%,
                                         #66FCF1 50%
                                     );
-        background-size: 220%;
-        padding: 1rem 2rem;
+        background-size: 225%;
+        padding: .5rem 2rem;
         transition: all .5s ease-in-out;
-        margin: 3rem auto;
     }
 
     .nav-link a:hover{
@@ -568,7 +587,7 @@ hr{
 
 @media screen and (min-width: 1025px){
     .nav-link a{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .project-div{
