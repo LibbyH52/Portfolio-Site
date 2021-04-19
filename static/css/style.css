@@ -212,10 +212,8 @@ a:visited{
     }
 }
 
-
-
 h2.skills-heading{
-    color: #BAB2B5;
+    color: #1F2833;
     font-size: 2.5rem;
     font-weight: bolder;
     text-align: center;
@@ -389,17 +387,20 @@ h3.projects{
 }
 
 .skill{
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: bolder;
+    box-shadow: 1px 1px 2px rgba(31, 40, 51, .5), 
+                -3px -3px 3px rgba(31, 40, 51, .5),
+                3px 3px 4px rgba(31, 40, 51, .5),
+                -1px -1px 2px rgba(31, 40, 51, .5);
     margin: .5rem;
-    padding: .5rem;
+    padding: 3rem;
+    transition: all .3s ease-in-out;
 }
 
-.python-svg{
-    height: 3rem;
-    width: 3rem;
+.skill:hover{
+    box-shadow: 5px 5px 5px 5px rgba(31, 40, 51, .8); 
 }
-
 /********************************Button Styles*/
 a{
     text-decoration: none;
