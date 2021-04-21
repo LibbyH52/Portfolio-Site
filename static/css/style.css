@@ -245,6 +245,7 @@ h3.projects{
 
 .about-heading{
     align-self: center;
+    font-weight: 700;
 }
 
 .ed-link {
@@ -270,28 +271,28 @@ h3.projects{
 .about-container{
     background: #CFC6C7;
     color: #1f2833;
-    font-family: 'Montserrat', sans-serif;
     padding: 4rem 0;
 }
 
-.about-div{
+.about-div {
     display: grid;
     margin: 0 auto;
-    width: 80%;
+    grid-template-rows: repeat(3, min-content);
 }
 
 .picture{
     background: url('../img/coffee.jpg') no-repeat;
     background-size: cover;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 225px;
+    width: 225px;
     margin: 0 auto;
     max-width: 90%;
     max-height: 90%;
 }
 
 .details{
+    font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     margin: 0 auto;
     font-size: 1.25rem;
@@ -472,6 +473,12 @@ hr{
     }
 }
 
+@media screen and (min-width: 600px) {
+    .about-paragraph{
+        padding: 1rem 3rem;
+    }
+}
+
 @media screen and (min-width: 768px){
     .nav-link a{
         font-size: 2rem;
@@ -570,19 +577,27 @@ hr{
     }
     
     .about-div{
-        grid-template-columns: 5fr 7fr;
         margin: 0 auto;
+        grid-template-columns: 5fr 7fr;
+        width: 100%;
     }
 
     .picture{
         border-radius: 50px;
-        height: 360px;
-        width: 360px;
+        height: 300px;
+        width: 300px;
+        grid-row: 1/-1;
+        grid-column: 1/2;
+        align-self: center;
     }
 
     .details{
         margin: 0;
         width: 90%;
+    }
+
+    .about-paragraph{
+        padding: inherit 1rem;
     }
 }
 
