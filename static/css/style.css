@@ -35,6 +35,7 @@ body{
     justify-content: center;
     height: 100vh;
     position: relative;
+    text-shadow: 2px 2px 1px rgba(102, 252, 241, .4);
 }
 
 .header-container{
@@ -85,7 +86,7 @@ body{
     margin-top: 2rem;
     box-shadow: 3px 3px 4px #777;
     cursor: pointer;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in;
 }
 
 .btn.heading-btn:hover{
@@ -212,8 +213,15 @@ a:visited{
     }
 }
 
+h2{
+    color: #45a29e;
+    text-shadow: 1px 1px 1px rgba(10,10,10.5);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
 h2.skills-heading{
-    color: #1F2833;
     font-size: 2.5rem;
     font-weight: bolder;
     text-align: center;
@@ -235,17 +243,8 @@ h3.projects{
     text-align: center;
 }
 
-h2.project-heading{
-    color: #1F2833;
-}
-
 h3.projects{
     color: #45A29E;
-}
-
-.about-heading{
-    align-self: center;
-    font-weight: 700;
 }
 
 .ed-link {
@@ -289,6 +288,7 @@ h3.projects{
     margin: 0 auto;
     max-width: 90%;
     max-height: 90%;
+    box-shadow: 2px 2px 1px #45a29e;
 }
 
 .details{
@@ -296,9 +296,11 @@ h3.projects{
     letter-spacing: 1px;
     margin: 0 auto;
     font-size: 1.25rem;
-    word-spacing: 2px;
 }
 
+.about-paragraph{
+    word-spacing: 3px;
+}
 /*********************Project Section*/
 .project-div{
     display: flex;
@@ -384,7 +386,10 @@ h3.projects{
 }
 
 .skills-container{
-    background: #1f2833;
+    background-image: linear-gradient(to bottom right,
+                        rgba(241, 241, 241, .6),  
+                        rgba(243, 243, 243, 0.5)), 
+                        url('../img/pen.jpg');
 }
 
 .skill{
@@ -504,6 +509,10 @@ hr{
         font-size: 2rem;
     }
 
+    .about-heading{
+        font-size: 2rem;
+    }
+
     .about-div{
         margin: 0 auto;
         width: 80%;
@@ -594,6 +603,17 @@ hr{
     .details{
         margin: 0;
         width: 90%;
+    }
+
+    h2{
+        transition: all .4s ease-in-out;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h2:hover{
+        transform: skew(10deg);
+        letter-spacing: 4px;
     }
 
     .about-paragraph{
