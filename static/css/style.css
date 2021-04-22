@@ -313,20 +313,22 @@ h3.projects{
 }
 
 .project{
+    display: flex;
+    flex-direction: column;
     margin: 5px auto;
     position: relative;
-    max-width: 90%;
 }
 
 .img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #C5C6C7;
     display: block;
     height: 300px;
     width: 300px;
-    max-width: 95%;
+    max-width: 90%;
+    box-sizing: border-box;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 } 
 
 .monkees-project{
@@ -352,25 +354,22 @@ h3.projects{
 
 .project-details{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background: #C5C6C7;
-    border: 4px solid #45A29E;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
     color: #1f2722;
-    width: 100%;
-    height: 100%;
-    margin: 0 2px;
-    position: absolute; 
     text-align: center;
+    height: 15rem;
+    width: 300px;
+    max-width: 90%;
+    box-sizing: border-box;
+    padding: 2rem 0 1rem;
+    margin-top: -4rem;
 }
 
-.project:hover .project-details{
-    opacity: 1;
-    animation: fadeIn;
-    animation-duration: 1s;
+.project-skills {
+    display: none;
 }
 
 .skills-div{
@@ -410,19 +409,26 @@ h3.projects{
 /********************************Button Styles*/
 a{
     text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.buttons >a.btn{
+    color: #F1F1F1;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    display: block;
+    margin: .5rem auto;
 }
 
 
 a.btn-code{
     background-color: #1f2833;
     border: 3px solid #1f2833;
-    color: #F1F1F1;
 }
 
 a.btn-live{
     background-color: #45A29E;
     border: 3px solid #45A29E;
-    color: #F1F1F1;
 }
 
 /**********************Footer Styles*/
@@ -618,6 +624,32 @@ hr{
 
     .about-paragraph{
         padding: inherit 1rem;
+    }
+
+    .img{
+        clip-path: none;
+    }
+
+    .project-details{
+        border: 4px solid #45A29E;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 2px;
+        position: absolute; 
+        max-width: none;
+        transition: opacity .5s ease-in-out;
+    }
+
+    .project:hover .project-details{
+        opacity: 1;
+    }
+
+    .project-skills{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
