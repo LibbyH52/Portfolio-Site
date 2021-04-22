@@ -6,12 +6,13 @@ const links = document.querySelectorAll('.nav-link');
 
 
 const toggleNavigation = () => {
-    if(navigate.style.display === "none") {
-        navigate.style.display = "flex";
+    if(navigate.style.display === "flex") {
+        navigate.style.display = "none";
     } else {
-        navigate.style.display="none";
+        navigate.style.display="flex";
     }
 }
+
 
 bars.addEventListener('click', (e) => {
     'use strict';
