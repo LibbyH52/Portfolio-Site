@@ -247,6 +247,14 @@ h3.projects{
     color: #45A29E;
 }
 
+<<<<<<< HEAD
+=======
+.about-heading{
+    align-self: center;
+    font-weight: 700;
+}
+
+>>>>>>> e754676e8ec7ef1ace8242ef4f357a581e57237d
 .ed-link {
     color: rgb(31, 40, 51, .7);
     font-weight: 200;
@@ -614,6 +622,7 @@ hr{
         width: 90%;
     }
 
+<<<<<<< HEAD
     h2{
         transition: all .4s ease-in-out;
         margin: 0 auto;
@@ -654,6 +663,11 @@ hr{
         display: flex;
         flex-wrap: wrap;
     }
+=======
+    .about-paragraph{
+        padding: inherit 1rem;
+    }
+>>>>>>> e754676e8ec7ef1ace8242ef4f357a581e57237d
 }
 
 @media screen and (min-width: 1025px){
