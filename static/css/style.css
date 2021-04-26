@@ -332,16 +332,19 @@ h3.projects{
 } 
 
 .monkees-project{
-    background: url('../img/monkees.png') center center;
+    background: url('../img/monkees.png') bottom left;
 }
 
 .cereal-project{
-    background: url('../img/cereal.png') center center;
-    background-size: cover;
+    background: url('../img/cereal.png') top left;
+}
+
+.number-project{
+    background: url('../img/number.png') top left;
 }
 
 .hangman-project{
-    background: url('../img/hangman.png') center center;
+    background: url('../img/hangman.png') center bottom;
 }
 
 .recipe-project{
