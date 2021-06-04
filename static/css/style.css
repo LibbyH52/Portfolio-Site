@@ -247,14 +247,6 @@ h3.projects{
     color: #45A29E;
 }
 
-<<<<<<< HEAD
-=======
-.about-heading{
-    align-self: center;
-    font-weight: 700;
-}
-
->>>>>>> e754676e8ec7ef1ace8242ef4f357a581e57237d
 .ed-link {
     color: rgb(31, 40, 51, .7);
     font-weight: 200;
@@ -296,7 +288,7 @@ h3.projects{
     margin: 0 auto;
     max-width: 90%;
     max-height: 90%;
-    box-shadow: 2px 2px 1px #45a29e;
+    box-shadow: 2px 2px 4px rgba(69, 162, 158, .6);
 }
 
 .details{
@@ -328,6 +320,7 @@ h3.projects{
 }
 
 .img{
+    box-shadow: 2px 2px 3px #555555b6;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -622,7 +615,6 @@ hr{
         width: 90%;
     }
 
-<<<<<<< HEAD
     h2{
         transition: all .4s ease-in-out;
         margin: 0 auto;
@@ -640,6 +632,7 @@ hr{
 
     .img{
         clip-path: none;
+        transition: all .4s;
     }
 
     .project-details{
@@ -655,6 +648,11 @@ hr{
         transition: opacity .5s ease-in-out;
     }
 
+    .project:hover .img{
+        box-shadow: none;
+
+    }
+
     .project:hover .project-details{
         opacity: 1;
     }
@@ -663,11 +661,6 @@ hr{
         display: flex;
         flex-wrap: wrap;
     }
-=======
-    .about-paragraph{
-        padding: inherit 1rem;
-    }
->>>>>>> e754676e8ec7ef1ace8242ef4f357a581e57237d
 }
 
 @media screen and (min-width: 1025px){
